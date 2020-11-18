@@ -17,8 +17,16 @@ namespace Bakery
 
     public abstract class BakeryProduct
     {
-        private ProductTypes type;
+        public BakeryProduct(ProductTypes type, double markUp, List<Ingredient> composition)
+        {
+            this.type = type;
+            this.markUp = markUp;
+            Composition = composition;
+        }
+        protected ProductTypes type;
         public ProductTypes Type { get { return type; } }
-        public abstract int MarkUp { get; set; }
+        protected double markUp;
+        public double MarkUp { get {return markUp; } }
+        public List<Ingredient> Composition { get; set; }
     }
 }
