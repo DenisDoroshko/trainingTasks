@@ -17,8 +17,10 @@ namespace Bakery
 
     public abstract class BakeryProduct
     {
-        public BakeryProduct(List<Ingredient> composition)
+        public BakeryProduct(string name,int producedNumber,List<Ingredient> composition)
         {
+            Name = name;
+            ProducedNumber = producedNumber;
             Composition = composition;
         }
         public BakeryProduct()
@@ -32,6 +34,7 @@ namespace Bakery
         public double Price { get { return GetPrice(); } }
         public double Calories { get { return GetCalories(); } }
         public int ProducedNumber { get; set; }
+        public string Name { get; set; }
         private double GetPrice()
         {
             double price = 0;

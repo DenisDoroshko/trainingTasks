@@ -8,7 +8,7 @@ namespace Bakery
 {
     public class Bread:BakeryProduct
     {
-        public Bread(List<Ingredient> composition) : base(composition)
+        public Bread(string name, int producedNumber, List<Ingredient> composition) : base(name,producedNumber,composition)
         {
 
         }
@@ -18,7 +18,8 @@ namespace Bakery
         public override double MarkUp { get { return markUp; } }
         public override string ToString()
         {
-            return $"Type: {type} Price: {Price} Calories: {Calories}";
+            return $"Type: {type} Name: {Name} Produced Number:{ProducedNumber} Price: {Price} " +
+                $"Calories: {Calories}";
         }
         public override bool Equals(object obj)
         {

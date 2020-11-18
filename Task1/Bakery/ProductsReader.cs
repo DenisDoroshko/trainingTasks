@@ -35,32 +35,41 @@ namespace Bakery
             
             return null;
         }
-        private static BakeryProduct CreateProduct(string dataString)
+        private static BakeryProduct CreateProduct(string dataLine)
         {
             string typePattern = "Bread|Baton|Bun";
             string namePattern = "\".+\"";
             string numberPattern = "[0-9]+";
-            string stringType = Regex.Match(dataString, typePattern).Value;
-            string stringName = Regex.Match(dataString, namePattern).Value;
-            string stringNumber = Regex.Match(dataString, numberPattern).Value;
+            string stringType = Regex.Match(dataLine, typePattern).Value;
+            string productName = Regex.Match(dataLine, namePattern).Value;
+            string stringNumber = Regex.Match(dataLine, numberPattern).Value;
+            int producedNumber;
+            int.TryParse(stringNumber, out producedNumber);
             ProductTypes productType;
-            ProductTypes.TryParse(stringType,out productType);
+            Enum.TryParse(stringType,out productType);
             BakeryProduct product = null;
             switch (productType)
             {
                 case ProductTypes.Bread:
-                    product = new Bread(new List<Ingredient>());
+                    product = new Bread(productName, producedNumber,new List<Ingredient>());
                     break;
                 case ProductTypes.Baton:
-                    product = new Bread(new List<Ingredient>());
+                    product = new Bread(productName, producedNumber, new List<Ingredient>());
                     break;
             }
             return product;
         }
-        private static Ingredient CreateIngredient(string dataString)
+        private static Ingredient CreateIngredient(string dataLine)
         {
-            Ingredient ingredient = null;
-
+            string name = Regex.Match(dataLine, @"\D+").Value;
+            MatchCollection values= Regex.Matches(dataLine, @"([0-9]+\.[0-9]+|[0-9]+)");
+            double weight;
+            double.TryParse(values[0].Value, out weight);
+            double price;
+            double.TryParse(values[0].Value, out price);
+            double calories;
+            double.TryParse(values[0].Value, out calories);
+            Ingredient ingredient = new Ingredient(name,weight,price, calories);
             return ingredient;
         }
         private static List<string> ReadProducts()
