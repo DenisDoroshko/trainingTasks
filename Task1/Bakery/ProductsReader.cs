@@ -14,10 +14,9 @@ namespace Bakery
         {   
             List<string> data = ReadProducts();
             List<BakeryProduct> products = new List<BakeryProduct>();
-            string typePattern = "Bread|Baton|Bun";
             foreach(var dataLine in data)
             {
-                if (Regex.IsMatch(dataLine, typePattern))
+                if (Regex.IsMatch(dataLine, "Bread|Baton|Bun"))
                 {
                     BakeryProduct newProduct = CreateProduct(dataLine);
                     if(newProduct!=null)
@@ -32,17 +31,13 @@ namespace Bakery
                 }
 
             }
-            
-            return null;
+            return products;
         }
         private static BakeryProduct CreateProduct(string dataLine)
         {
-            string typePattern = "Bread|Baton|Bun";
-            string namePattern = "\".+\"";
-            string numberPattern = "[0-9]+";
-            string stringType = Regex.Match(dataLine, typePattern).Value;
-            string productName = Regex.Match(dataLine, namePattern).Value;
-            string stringNumber = Regex.Match(dataLine, numberPattern).Value;
+            string stringType = Regex.Match(dataLine, "Bread|Baton|Bun").Value;
+            string productName = Regex.Match(dataLine, "\".+\"").Value;
+            string stringNumber = Regex.Match(dataLine, "[0-9]+").Value;
             int producedNumber;
             int.TryParse(stringNumber, out producedNumber);
             ProductTypes productType;
@@ -66,9 +61,9 @@ namespace Bakery
             double weight;
             double.TryParse(values[0].Value, out weight);
             double price;
-            double.TryParse(values[0].Value, out price);
+            double.TryParse(values[1].Value, out price);
             double calories;
-            double.TryParse(values[0].Value, out calories);
+            double.TryParse(values[2].Value, out calories);
             Ingredient ingredient = new Ingredient(name,weight,price, calories);
             return ingredient;
         }

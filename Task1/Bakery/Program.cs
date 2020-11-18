@@ -11,6 +11,7 @@ namespace Bakery
         static void Main(string[] args)
         {
             ProductsReader.GetProducts();
+            int[] j = new int[2];
             Console.Read();
         }
     }
