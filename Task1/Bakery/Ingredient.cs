@@ -8,12 +8,12 @@ namespace Bakery
 {
     public class Ingredient
     {
-        public Ingredient(string name,double weight,double price,double calorie)
+        public Ingredient(string name,double weight,double price,double calories)
         {
             Name = name;
             Weight = weight;
             Price = price;
-            Calorie = calorie;
+            Calories = calories;
         }
         public Ingredient()
         {
@@ -23,6 +23,6 @@ namespace Bakery
         public string Name { get; set; }
         public double Weight { get; set; }
         public double Price { get; set; }
-        public double Calorie { get; set; }
+        public double Calories { get; set; }
     }
 }
