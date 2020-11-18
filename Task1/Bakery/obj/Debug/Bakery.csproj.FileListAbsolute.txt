@@ -1,0 +1,7 @@
+D:\trainingTasks\Task1\Bakery\bin\Debug\Bakery.exe.config
+D:\trainingTasks\Task1\Bakery\bin\Debug\Bakery.exe
+D:\trainingTasks\Task1\Bakery\bin\Debug\Bakery.pdb
+D:\trainingTasks\Task1\Bakery\obj\Debug\Bakery.csprojAssemblyReference.cache
+D:\trainingTasks\Task1\Bakery\obj\Debug\Bakery.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task1\Bakery\obj\Debug\Bakery.exe
+D:\trainingTasks\Task1\Bakery\obj\Debug\Bakery.pdb

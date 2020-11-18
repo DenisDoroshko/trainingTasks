@@ -10,6 +10,8 @@ namespace Bakery
     {
         static void Main(string[] args)
         {
+            ProductsReader.GetProducts();
+            Console.Read();
         }
     }
 }

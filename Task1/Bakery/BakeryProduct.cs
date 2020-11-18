@@ -21,12 +21,17 @@ namespace Bakery
         {
             Composition = composition;
         }
+        public BakeryProduct()
+        {
+
+        }
 
         public abstract ProductTypes Type { get; }
         public abstract double MarkUp { get; }
         public List<Ingredient> Composition { get; set; }
         public double Price { get { return GetPrice(); } }
         public double Calories { get { return GetCalories(); } }
+        public int ProducedNumber { get; set; }
         private double GetPrice()
         {
             double price = 0;
