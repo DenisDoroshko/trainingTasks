@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bakery
+namespace WorkWithBakery
 {
     public enum ProductTypes 
     { 
@@ -15,7 +15,7 @@ namespace Bakery
         Cake
     }
 
-    public abstract class BakeryProduct
+    public abstract class BakeryProduct:ICloneable
     {
         public BakeryProduct(string name,int producedNumber,List<Ingredient> composition)
         {
@@ -52,6 +52,17 @@ namespace Bakery
                 calories += ingredient.Calories;
             }
             return calories;
+        }
+        public object Clone()
+        {
+            var copiedProduct = (BakeryProduct)this.MemberwiseClone();
+            var copiedIngredients = new List<Ingredient>(Composition.Count);
+            foreach(var ingredient in Composition)
+            {
+                copiedIngredients.Add((Ingredient)ingredient.Clone());
+            }
+            copiedProduct.Composition = copiedIngredients;
+            return copiedProduct;
         }
     }
 }

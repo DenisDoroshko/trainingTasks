@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace Bakery
+namespace WorkWithBakery
 {
     public class ProductsReader
     {
@@ -56,7 +56,7 @@ namespace Bakery
         }
         private static Ingredient CreateIngredient(string dataLine)
         {
-            string name = Regex.Match(dataLine, @"\D+").Value;
+            string name = Regex.Match(dataLine, @"\D+").Value.Trim();
             MatchCollection values= Regex.Matches(dataLine, @"([0-9]+\.[0-9]+|[0-9]+)");
             double weight;
             double.TryParse(values[0].Value, out weight);

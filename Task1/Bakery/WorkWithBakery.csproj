@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{37C0EA8F-B788-4B23-A996-0729064020B4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Bakery</RootNamespace>
+    <RootNamespace>WorkWithBakery</RootNamespace>
     <AssemblyName>Bakery</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bakery.cs" />
     <Compile Include="BakeryProduct.cs" />
     <Compile Include="Bread.cs" />
     <Compile Include="Ingredient.cs" />

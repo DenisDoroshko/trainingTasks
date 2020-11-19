@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bakery
+namespace WorkWithBakery
 {
     public class Bread:BakeryProduct
     {
@@ -30,7 +30,7 @@ namespace Bakery
             else 
             {
                 BakeryProduct product = (BakeryProduct)obj;
-                return Price != product.Price && Calories != product.Calories;
+                return Price == product.Price && Calories == product.Calories;
             }
         }
         public override int GetHashCode()
