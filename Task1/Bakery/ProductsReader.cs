@@ -49,7 +49,10 @@ namespace WorkWithBakery
                     product = new Bread(productName, producedNumber,new List<Ingredient>());
                     break;
                 case ProductTypes.Baton:
-                    product = new Bread(productName, producedNumber, new List<Ingredient>());
+                    product = new Baton(productName, producedNumber, new List<Ingredient>());
+                    break;
+                case ProductTypes.Bun:
+                    product = new Bun(productName, producedNumber, new List<Ingredient>());
                     break;
             }
             return product;

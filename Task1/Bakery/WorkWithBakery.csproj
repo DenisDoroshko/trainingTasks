@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="Bakery.cs" />
     <Compile Include="BakeryProduct.cs" />
+    <Compile Include="Baton.cs" />
     <Compile Include="Bread.cs" />
+    <Compile Include="Bun.cs" />
     <Compile Include="Ingredient.cs" />
     <Compile Include="ProductsReader.cs" />
     <Compile Include="Program.cs" />

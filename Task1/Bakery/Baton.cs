@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace WorkWithBakery
 {
-    public class Bread:BakeryProduct
+    public class Baton : BakeryProduct
     {
-        public Bread(string name, int producedNumber, List<Ingredient> composition) : base(name,producedNumber,composition)
+        public Baton(string name, int producedNumber, List<Ingredient> composition) : base(name, producedNumber, composition)
         {
 
         }
-        private ProductTypes type=ProductTypes.Bread;
+        private ProductTypes type = ProductTypes.Baton;
         public override ProductTypes Type { get { return type; } }
-        private double markUp=5;
+        private double markUp = 1;
         public override double MarkUp { get { return markUp; } }
         public override string ToString()
         {
@@ -27,7 +27,7 @@ namespace WorkWithBakery
             {
                 return false;
             }
-            else 
+            else
             {
                 BakeryProduct product = (BakeryProduct)obj;
                 return Price == product.Price && Calories == product.Calories;
@@ -35,7 +35,7 @@ namespace WorkWithBakery
         }
         public override int GetHashCode()
         {
-            return (int)(Price+Calories)/3;
+            return (int)(Price + Calories) / 3;
         }
     }
 }

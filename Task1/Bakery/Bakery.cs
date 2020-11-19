@@ -57,6 +57,33 @@ namespace WorkWithBakery
             }
             return equalsProducts;
         }
+        public List<BakeryProduct> FindByIngredientScope(string givenIngredient,double givenWeight)
+        {
+            var findedProducts = new List<BakeryProduct>();
+            givenIngredient=givenIngredient.ToLower();
+            foreach (var product in Products)
+            {
+                    Ingredient findedIngredient=product.Composition.Find(x => x.Name.ToLower().Contains(givenIngredient));
+                if (findedIngredient != null)
+                {
+                    if (findedIngredient.Weight > givenWeight)
+                    {
+                        findedProducts.Add(product);
+                    }
+                }
+            }
+            return findedProducts;
+        }
+        public List<BakeryProduct> FindByIngredientsNumber(int givenNumber)
+        {
+            var findedProducts = new List<BakeryProduct>();
+            foreach (var product in Products)
+            {
+                if (product.Composition.Count > givenNumber)
+                    findedProducts.Add(product);
+            }
+            return findedProducts;
+        }
 
         private List<BakeryProduct> GetCopy()
         {
