@@ -1,0 +1,10 @@
+Bread "Delicious" 10 pcs
+Rye flour 5 kg 10 r 350 J
+Water 2 kg 2 r 0 J
+Sugar 0.5 kg 2 r 200 J
+Baton "Minski" 20 pcs
+Wheat flour 10.5 kg 15 r 450 J
+Water 0.5 kg 3 r 0 J
+Bun "Tasty" 5 pcs
+Wheat flour 2 kg 5 r 450 J
+Water 2 kg 3 r 0 J

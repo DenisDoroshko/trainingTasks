@@ -52,6 +52,7 @@
     <Compile Include="ArraySorterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchInArrayTest.cs" />
+    <Compile Include="ProductsReaderTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
