@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithBakery", "Bakery\WorkWithBakery.csproj", "{37C0EA8F-B788-4B23-A996-0729064020B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bakery", "Bakery\Bakery.csproj", "{37C0EA8F-B788-4B23-A996-0729064020B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithBakery", "WorkWithBakery\WorkWithBakery.csproj", "{E7CA5BC2-E40A-4481-8496-25AD7C6306B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakeryTests", "BakeryTests\BakeryTests.csproj", "{F0064161-109D-4098-A588-E42909AA8E1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{37C0EA8F-B788-4B23-A996-0729064020B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37C0EA8F-B788-4B23-A996-0729064020B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37C0EA8F-B788-4B23-A996-0729064020B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CA5BC2-E40A-4481-8496-25AD7C6306B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CA5BC2-E40A-4481-8496-25AD7C6306B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CA5BC2-E40A-4481-8496-25AD7C6306B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CA5BC2-E40A-4481-8496-25AD7C6306B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0064161-109D-4098-A588-E42909AA8E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0064161-109D-4098-A588-E42909AA8E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0064161-109D-4098-A588-E42909AA8E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0064161-109D-4098-A588-E42909AA8E1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

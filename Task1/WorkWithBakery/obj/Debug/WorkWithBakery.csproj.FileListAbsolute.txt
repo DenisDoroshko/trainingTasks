@@ -1,0 +1,10 @@
+D:\trainingTasks\Task1\WorkWithBakery\bin\Debug\WorkWithBakery.exe
+D:\trainingTasks\Task1\WorkWithBakery\bin\Debug\WorkWithBakery.pdb
+D:\trainingTasks\Task1\WorkWithBakery\bin\Debug\Bakery.dll
+D:\trainingTasks\Task1\WorkWithBakery\bin\Debug\Bakery.pdb
+D:\trainingTasks\Task1\WorkWithBakery\bin\Debug\Bakery.dll.config
+D:\trainingTasks\Task1\WorkWithBakery\obj\Debug\WorkWithBakery.csprojAssemblyReference.cache
+D:\trainingTasks\Task1\WorkWithBakery\obj\Debug\WorkWithBakery.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task1\WorkWithBakery\obj\Debug\WorkWithBakery.csproj.CopyComplete
+D:\trainingTasks\Task1\WorkWithBakery\obj\Debug\WorkWithBakery.exe
+D:\trainingTasks\Task1\WorkWithBakery\obj\Debug\WorkWithBakery.pdb

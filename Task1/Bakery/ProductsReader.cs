@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace WorkWithBakery
+namespace Bakery
 {
-    public class ProductsReader
+    /// <summary>
+    ///The class that provides methods for reading and creating products
+    /// </summary>
+    
+    public static class ProductsReader
     {
-        public static List<BakeryProduct>GetProducts()
+        /// <summary>
+        /// Creates products
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>Produced products</returns>
+        
+        public static List<BakeryProduct>GetProducts(string path)
         {   
-            List<string> data = ReadProducts();
+            List<string> data = ReadProducts(path);
             List<BakeryProduct> products = new List<BakeryProduct>();
             foreach(var dataLine in data)
             {
@@ -33,6 +43,13 @@ namespace WorkWithBakery
             }
             return products;
         }
+
+        /// <summary>
+        /// Creates product from line
+        /// </summary>
+        /// <param name="dataLine"></param>
+        /// <returns>Bakery product</returns>
+        
         private static BakeryProduct CreateProduct(string dataLine)
         {
             string stringType = Regex.Match(dataLine, "Bread|Baton|Bun").Value;
@@ -57,11 +74,19 @@ namespace WorkWithBakery
             }
             return product;
         }
+
+        /// <summary>
+        /// Creates ingredient from line
+        /// </summary>
+        /// <param name="dataLine"></param>
+        /// <returns>Ingredient of product</returns>
+        
         private static Ingredient CreateIngredient(string dataLine)
         {
             string name = Regex.Match(dataLine, @"\D+").Value.Trim();
-            MatchCollection values= Regex.Matches(dataLine, @"([0-9]+\.[0-9]+|[0-9]+)");
+            MatchCollection values= Regex.Matches(dataLine, @"([0-9]+,[0-9]+|[0-9]+)");
             double weight;
+            Console.WriteLine(values[0].Value);
             double.TryParse(values[0].Value, out weight);
             double price;
             double.TryParse(values[1].Value, out price);
@@ -70,10 +95,17 @@ namespace WorkWithBakery
             Ingredient ingredient = new Ingredient(name,weight,price, calories);
             return ingredient;
         }
-        private static List<string> ReadProducts()
+
+        /// <summary>
+        /// Reads data from given file
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>Data</returns>
+        
+        private static List<string> ReadProducts(string path)
         {
             List<string> data = new List<string>();
-            using (var sr = new StreamReader("products.txt"))
+            using (var sr = new StreamReader(path))
             {
                 while (!sr.EndOfStream)
                 {
