@@ -26,7 +26,7 @@ namespace Bakery
             List<BakeryProduct> products = new List<BakeryProduct>();
             foreach(var dataLine in data)
             {
-                if (Regex.IsMatch(dataLine, "Bread|Baton|Bun"))
+                if (Regex.IsMatch(dataLine, "Bread|Baton|Bun|Pie|Cake"))
                 {
                     BakeryProduct newProduct = CreateProduct(dataLine);
                     if(newProduct!=null)
@@ -52,7 +52,7 @@ namespace Bakery
         
         private static BakeryProduct CreateProduct(string dataLine)
         {
-            string stringType = Regex.Match(dataLine, "Bread|Baton|Bun").Value;
+            string stringType = Regex.Match(dataLine, "Bread|Baton|Bun|Pie|Cake").Value;
             string productName = Regex.Match(dataLine, "\".+\"").Value;
             string stringNumber = Regex.Match(dataLine, "[0-9]+").Value;
             int producedNumber;
@@ -69,6 +69,12 @@ namespace Bakery
                     product = new Baton(productName, producedNumber, new List<Ingredient>());
                     break;
                 case ProductTypes.Bun:
+                    product = new Bun(productName, producedNumber, new List<Ingredient>());
+                    break;
+                case ProductTypes.Pie:
+                    product = new Bun(productName, producedNumber, new List<Ingredient>());
+                    break;
+                case ProductTypes.Cake:
                     product = new Bun(productName, producedNumber, new List<Ingredient>());
                     break;
             }
