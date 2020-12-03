@@ -1,0 +1,10 @@
+D:\trainingTasks\Task2\Products\obj\Debug\Products.csprojAssemblyReference.cache
+D:\trainingTasks\Task2\Products\obj\Debug\Products.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task2\Products\bin\Debug\Products.exe.config
+D:\trainingTasks\Task2\Products\bin\Debug\Products.exe
+D:\trainingTasks\Task2\Products\bin\Debug\Products.pdb
+D:\trainingTasks\Task2\Products\obj\Debug\Products.exe
+D:\trainingTasks\Task2\Products\obj\Debug\Products.pdb
+D:\trainingTasks\Task2\Products\bin\Debug\OwnExceptions.dll
+D:\trainingTasks\Task2\Products\bin\Debug\OwnExceptions.pdb
+D:\trainingTasks\Task2\Products\obj\Debug\Products.csproj.CopyComplete

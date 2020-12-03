@@ -1,0 +1,6 @@
+D:\trainingTasks\Task2\OwnExceptions\bin\Debug\OwnExceptions.dll
+D:\trainingTasks\Task2\OwnExceptions\bin\Debug\OwnExceptions.pdb
+D:\trainingTasks\Task2\OwnExceptions\obj\Debug\OwnExceptions.csprojAssemblyReference.cache
+D:\trainingTasks\Task2\OwnExceptions\obj\Debug\OwnExceptions.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task2\OwnExceptions\obj\Debug\OwnExceptions.dll
+D:\trainingTasks\Task2\OwnExceptions\obj\Debug\OwnExceptions.pdb
