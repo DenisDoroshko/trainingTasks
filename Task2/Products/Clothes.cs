@@ -8,7 +8,7 @@ using OwnExceptions;
 namespace Products
 {
     /// <summary>
-    /// The class representing the type of product food
+    /// The class representing the type of product clothes
     /// </summary>
 
     public class Clothes:Product
@@ -117,12 +117,24 @@ namespace Products
         /// <summary>
         /// Overloading a type conversion operation from Food to Clothes
         /// </summary>
-        /// <param name="product">Value of double type</param>
+        /// <param name="product">Instance of Clothes class</param>
 
+       
         public static explicit operator Clothes(Food product)
         {
             return new Clothes(product.Name, product.Number, product.PurchasePrice, product.MarkUp);
         }
+
+        /// <summary>
+        /// Overloading a type conversion operation from Furniture to Clothes
+        /// </summary>
+        /// <param name="product">Instance of Clothes class</param>
+
+        public static explicit operator Clothes(Furniture product)
+        {
+            return new Clothes(product.Name, product.Number, product.PurchasePrice, product.MarkUp);
+        }
+        
 
         /// <summary>
         /// Converts class to string
@@ -131,7 +143,7 @@ namespace Products
 
         public override string ToString()
         {
-            return $"{ProductType} {Name} {Number} {PurchasePrice} {MarkUp}";
+            return $"Type: {ProductType}, Name: {Name}, Number:{Number}, Purchase price:{PurchasePrice}, Mark up:{MarkUp}";
         }
 
         /// <summary>

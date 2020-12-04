@@ -1,0 +1,358 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Products</name>
+    </assembly>
+    <members>
+        <member name="T:Products.Clothes">
+            <summary>
+            The class representing the type of product clothes
+            </summary>
+        </member>
+        <member name="M:Products.Clothes.#ctor(System.String,System.Int32,System.Double,System.Double)">
+            <summary>
+            Creates an instance of the Clothes class
+            </summary>
+            <param name="name">Name of product</param>
+            <param name="number">Products number</param>
+            <param name="purchasePrice">Purchase price</param>
+            <param name="markUp">Mark up</param>
+        </member>
+        <member name="M:Products.Clothes.#ctor">
+            <summary>
+            Creates an instance of the Clothes class
+            </summary>
+        </member>
+        <member name="F:Products.Clothes.type">
+            <summary>
+            Private field of product  type
+            </summary>
+        </member>
+        <member name="P:Products.Clothes.ProductType">
+            <summary>
+            Type of product
+            </summary>
+        </member>
+        <member name="M:Products.Clothes.op_Addition(Products.Clothes,Products.Clothes)">
+            <summary>
+            Overloading the addition operator
+            </summary>
+            <param name="firstProduct">First product</param>
+            <param name="secondProduct">Second product</param>
+            <returns>Sum of products</returns>
+        </member>
+        <member name="M:Products.Clothes.op_Subtraction(Products.Clothes,System.Int32)">
+            <summary>
+            Overloading the subtraction operator
+            </summary>
+            <param name="product">Product</param>
+            <param name="givenNumber">Number</param>
+            <returns>New instance of the Clothes class with a different quantity value </returns>
+        </member>
+        <member name="M:Products.Clothes.op_Explicit(Products.Clothes)~System.Int32">
+            <summary>
+            Overloading a type conversion operation to int type
+            </summary>
+            <param name="product">Value of int type</param>
+        </member>
+        <member name="M:Products.Clothes.op_Explicit(Products.Clothes)~System.Double">
+            <summary>
+            Overloading a type conversion operation to double type
+            </summary>
+            <param name="product">Value of double type</param>
+        </member>
+        <member name="M:Products.Clothes.op_Explicit(Products.Food)~Products.Clothes">
+            <summary>
+            Overloading a type conversion operation from Food to Clothes
+            </summary>
+            <param name="product">Instance of Clothes class</param>
+        </member>
+        <member name="M:Products.Clothes.op_Explicit(Products.Furniture)~Products.Clothes">
+            <summary>
+            Overloading a type conversion operation from Furniture to Clothes
+            </summary>
+            <param name="product">Instance of Clothes class</param>
+        </member>
+        <member name="M:Products.Clothes.ToString">
+            <summary>
+            Converts class to string
+            </summary>
+            <returns>String representation of a class</returns>
+        </member>
+        <member name="M:Products.Clothes.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:Products.Clothes.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+        <member name="T:Products.Food">
+            <summary>
+            The class representing the type of product food
+            </summary>
+        </member>
+        <member name="M:Products.Food.#ctor(System.String,System.Int32,System.Double,System.Double)">
+            <summary>
+            Creates an instance of the Food class
+            </summary>
+            <param name="name">Name of product</param>
+            <param name="number">Products number</param>
+            <param name="purchasePrice">Purchase price</param>
+            <param name="markUp">Mark up</param>
+        </member>
+        <member name="M:Products.Food.#ctor">
+            <summary>
+            Creates an instance of the Food class
+            </summary>
+        </member>
+        <member name="F:Products.Food.type">
+            <summary>
+            Private field of product  type
+            </summary>
+        </member>
+        <member name="P:Products.Food.ProductType">
+            <summary>
+            Type of product
+            </summary>
+        </member>
+        <member name="M:Products.Food.op_Addition(Products.Food,Products.Food)">
+            <summary>
+            Overloading the addition operator
+            </summary>
+            <param name="firstProduct">First product</param>
+            <param name="secondProduct">Second product</param>
+            <returns>Sum of products</returns>
+        </member>
+        <member name="M:Products.Food.op_Subtraction(Products.Food,System.Int32)">
+            <summary>
+            Overloading the subtraction operator
+            </summary>
+            <param name="product">Product</param>
+            <param name="givenNumber">Number</param>
+            <returns>New instance of the Food class with a different quantity value </returns>
+        </member>
+        <member name="M:Products.Food.op_Explicit(Products.Food)~System.Int32">
+            <summary>
+            Overloading a type conversion operation to int type
+            </summary>
+            <param name="product">Value of int type</param>
+        </member>
+        <member name="M:Products.Food.op_Explicit(Products.Food)~System.Double">
+            <summary>
+            Overloading a type conversion operation to double type
+            </summary>
+            <param name="product">Value of double type</param>
+        </member>
+        <member name="M:Products.Food.op_Explicit(Products.Clothes)~Products.Food">
+            <summary>
+            Overloading a type conversion operation from Clothes to Food
+            </summary>
+            <param name="product">Instance of Food class</param>
+        </member>
+        <member name="M:Products.Food.op_Explicit(Products.Furniture)~Products.Food">
+            <summary>
+            Overloading a type conversion operation from Furniture to Food
+            </summary>
+            <param name="product">Instance of Food class</param>
+        </member>
+        <member name="M:Products.Food.ToString">
+            <summary>
+            Converts class to string
+            </summary>
+            <returns>String representation of a class</returns>
+        </member>
+        <member name="M:Products.Food.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:Products.Food.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+        <member name="T:Products.Furniture">
+            <summary>
+            The class representing the type of product furniture
+            </summary>
+        </member>
+        <member name="M:Products.Furniture.#ctor(System.String,System.Int32,System.Double,System.Double)">
+            <summary>
+            Creates an instance of the Furniture class
+            </summary>
+            <param name="name">Name of product</param>
+            <param name="number">Products number</param>
+            <param name="purchasePrice">Purchase price</param>
+            <param name="markUp">Mark up</param>
+        </member>
+        <member name="M:Products.Furniture.#ctor">
+            <summary>
+            Creates an instance of the Furniture class
+            </summary>
+        </member>
+        <member name="F:Products.Furniture.type">
+            <summary>
+            Private field of product  type
+            </summary>
+        </member>
+        <member name="P:Products.Furniture.ProductType">
+            <summary>
+            Type of product
+            </summary>
+        </member>
+        <member name="M:Products.Furniture.op_Addition(Products.Furniture,Products.Furniture)">
+            <summary>
+            Overloading the addition operator
+            </summary>
+            <param name="firstProduct">First product</param>
+            <param name="secondProduct">Second product</param>
+            <returns>Sum of products</returns>
+        </member>
+        <member name="M:Products.Furniture.op_Subtraction(Products.Furniture,System.Int32)">
+            <summary>
+            Overloading the subtraction operator
+            </summary>
+            <param name="product">Product</param>
+            <param name="givenNumber">Number</param>
+            <returns>New instance of the Food class with a different quantity value </returns>
+        </member>
+        <member name="M:Products.Furniture.op_Explicit(Products.Furniture)~System.Int32">
+            <summary>
+            Overloading a type conversion operation to int type
+            </summary>
+            <param name="product">Value of int type</param>
+        </member>
+        <member name="M:Products.Furniture.op_Explicit(Products.Furniture)~System.Double">
+            <summary>
+            Overloading a type conversion operation to double type
+            </summary>
+            <param name="product">Value of double type</param>
+        </member>
+        <member name="M:Products.Furniture.op_Explicit(Products.Food)~Products.Furniture">
+            <summary>
+            Overloading a type conversion operation from Food to Furniture
+            </summary>
+            <param name="product">Instance of Furniture class</param>
+        </member>
+        <member name="M:Products.Furniture.op_Explicit(Products.Clothes)~Products.Furniture">
+            <summary>
+            Overloading a type conversion operation from Clothes to Furniture
+            </summary>
+            <param name="product">Instance of Furniture class</param>
+        </member>
+        <member name="M:Products.Furniture.ToString">
+            <summary>
+            Converts class to string
+            </summary>
+            <returns>String representation of a class</returns>
+        </member>
+        <member name="M:Products.Furniture.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:Products.Furniture.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+        <member name="T:Products.ProductTypes">
+            <summary>
+            Product types
+            </summary>
+        </member>
+        <member name="F:Products.ProductTypes.Food">
+            <summary>
+            Type of product
+            </summary>
+        </member>
+        <member name="F:Products.ProductTypes.Clothes">
+            <summary>
+            Type of product
+            </summary>
+        </member>
+        <member name="F:Products.ProductTypes.Furniture">
+            <summary>
+            Type of product
+            </summary>
+        </member>
+        <member name="T:Products.Product">
+            <summary>
+            The abstract class representing a product
+            </summary>
+        </member>
+        <member name="M:Products.Product.#ctor(System.String,System.Int32,System.Double,System.Double)">
+            <summary>
+            Class constructor
+            </summary>
+            <param name="name">Name of product</param>
+            <param name="number">Products number</param>
+            <param name="purchasePrice">Purchase price</param>
+            <param name="markUp">Mark up</param>
+        </member>
+        <member name="M:Products.Product.#ctor">
+            <summary>
+            Class constructor
+            </summary>
+        </member>
+        <member name="P:Products.Product.Name">
+            <summary>
+            Name of product
+            </summary>
+        </member>
+        <member name="P:Products.Product.PurchasePrice">
+            <summary>
+            Purchase price
+            </summary>
+        </member>
+        <member name="P:Products.Product.Number">
+            <summary>
+            Number of products
+            </summary>
+        </member>
+        <member name="P:Products.Product.ProductType">
+            <summary>
+            Type of product
+            </summary>
+        </member>
+        <member name="P:Products.Product.MarkUp">
+            <summary>
+            Mark up
+            </summary>
+        </member>
+        <member name="P:Products.Product.UnitPrice">
+            <summary>
+            Unit price
+            </summary>
+        </member>
+        <member name="P:Products.Product.AllPrice">
+            <summary>
+            All price of products
+            </summary>
+        </member>
+        <member name="M:Products.Product.GetUnitPrice">
+            <summary>
+            Gets the unit price
+            </summary>
+            <returns>The unit price</returns>
+        </member>
+        <member name="M:Products.Product.GetAllPrice">
+            <summary>
+            Gets all price of products
+            </summary>
+            <returns>The all price</returns>
+        </member>
+    </members>
+</doc>

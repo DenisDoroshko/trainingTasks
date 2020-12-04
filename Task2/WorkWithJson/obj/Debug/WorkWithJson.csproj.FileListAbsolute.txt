@@ -1,9 +1,6 @@
-D:\trainingTasks\Task2\WorkWithJson\bin\Debug\WorkWithJson.exe.config
-D:\trainingTasks\Task2\WorkWithJson\bin\Debug\WorkWithJson.exe
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\WorkWithJson.pdb
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Newtonsoft.Json.dll
-D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Products.exe
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\System.Buffers.dll
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\System.Memory.dll
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\System.Numerics.Vectors.dll
@@ -14,7 +11,6 @@ D:\trainingTasks\Task2\WorkWithJson\bin\Debug\System.Threading.Tasks.Extensions.
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\System.ValueTuple.dll
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\OwnExceptions.dll
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Products.pdb
-D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Products.exe.config
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Newtonsoft.Json.xml
 D:\trainingTasks\Task2\WorkWithJson\bin\Debug\System.Buffers.xml
@@ -29,5 +25,12 @@ D:\trainingTasks\Task2\WorkWithJson\bin\Debug\OwnExceptions.pdb
 D:\trainingTasks\Task2\WorkWithJson\obj\Debug\WorkWithJson.csprojAssemblyReference.cache
 D:\trainingTasks\Task2\WorkWithJson\obj\Debug\WorkWithJson.csproj.CoreCompileInputs.cache
 D:\trainingTasks\Task2\WorkWithJson\obj\Debug\WorkWithJson.csproj.CopyComplete
-D:\trainingTasks\Task2\WorkWithJson\obj\Debug\WorkWithJson.exe
 D:\trainingTasks\Task2\WorkWithJson\obj\Debug\WorkWithJson.pdb
+D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Products.dll
+D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Products.dll.config
+D:\trainingTasks\Task2\WorkWithJson\bin\Debug\WorkWithJson.dll.config
+D:\trainingTasks\Task2\WorkWithJson\bin\Debug\WorkWithJson.dll
+D:\trainingTasks\Task2\WorkWithJson\obj\Debug\WorkWithJson.dll
+D:\trainingTasks\Task2\WorkWithJson\bin\Debug\WorkWithJson.xml
+D:\trainingTasks\Task2\WorkWithJson\bin\Debug\Products.xml
+D:\trainingTasks\Task2\WorkWithJson\bin\Debug\OwnExceptions.xml

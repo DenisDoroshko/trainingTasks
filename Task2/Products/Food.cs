@@ -60,9 +60,9 @@ namespace Products
             {
                 var resultProduct = new Food();
                 resultProduct.Name = firstProduct.Name;
-                resultProduct.PurchasePrice =(firstProduct. PurchasePrice*firstProduct.Number 
+                resultProduct.PurchasePrice = (firstProduct. PurchasePrice*firstProduct.Number 
                     + secondProduct.PurchasePrice * secondProduct.Number) / (firstProduct.Number+secondProduct.Number);
-                resultProduct.MarkUp= (firstProduct.MarkUp * firstProduct.Number
+                resultProduct.MarkUp = (firstProduct.MarkUp * firstProduct.Number
                     + secondProduct.MarkUp * secondProduct.Number) / (firstProduct.Number + secondProduct.Number);
                 resultProduct.Number = firstProduct.Number + secondProduct.Number;
                 return resultProduct;
@@ -116,21 +116,31 @@ namespace Products
         /// <summary>
         /// Overloading a type conversion operation from Clothes to Food
         /// </summary>
-        /// <param name="product">Value of double type</param>
-        
+        /// <param name="product">Instance of Food class</param>
+
         public static explicit operator Food(Clothes product)
         {
             return new Food(product.Name,product.Number,product.PurchasePrice,product.MarkUp);
         }
 
         /// <summary>
+        /// Overloading a type conversion operation from Furniture to Food
+        /// </summary>
+        /// <param name="product">Instance of Food class</param>
+
+        public static explicit operator Food(Furniture product)
+        {
+            return new Food(product.Name, product.Number, product.PurchasePrice, product.MarkUp);
+        }
+
+        /// <summary>
         /// Converts class to string
         /// </summary>
         /// <returns>String representation of a class</returns>
-        
+
         public override string ToString()
         {
-            return $"{ProductType} {Name} {Number} {PurchasePrice} {MarkUp}";
+            return $"Type: {ProductType}, Name: {Name}, Number:{Number}, Purchase price:{PurchasePrice}, Mark up:{MarkUp}";
         }
 
         /// <summary>

@@ -12,8 +12,22 @@ namespace Products
     
     public enum ProductTypes
     {
+        /// <summary>
+        /// Type of product
+        /// </summary>
+        
         Food,
+
+        /// <summary>
+        /// Type of product
+        /// </summary>
+
         Clothes,
+
+        /// <summary>
+        /// Type of product
+        /// </summary>
+        
         Furniture
     }
 

@@ -1,0 +1,1 @@
+{"$type":"System.Collections.Generic.List`1[[Products.Product, Products]], mscorlib", "$values":[{"$type":"Products.Food, Products","ProductType":0,"Name":"Bread","PurchasePrice":2.5,"Number":21,"MarkUp":0.6,"UnitPrice":8.0,"AllPrice":8.0}]}

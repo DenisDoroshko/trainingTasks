@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OwnExceptions</name>
+    </assembly>
+    <members>
+        <member name="T:OwnExceptions.IncorrectNumberException">
+            <summary>
+            Represents an incrorrect number error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.IncorrectNumberException.#ctor">
+            <summary>
+            Creates an incrorrect number error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.IncorrectNumberException.#ctor(System.String)">
+            <summary>
+            Creates an incrorrect number error
+            </summary>
+        </member>
+        <member name="T:OwnExceptions.NotEqualNamesException">
+            <summary>
+            Represents a not equal names error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.NotEqualNamesException.#ctor">
+            <summary>
+            Creates a not equal names error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.NotEqualNamesException.#ctor(System.String)">
+            <summary>
+            Creates a not equal names error
+            </summary>
+        </member>
+    </members>
+</doc>

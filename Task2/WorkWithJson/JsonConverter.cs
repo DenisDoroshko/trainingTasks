@@ -16,12 +16,13 @@ namespace WorkWithJson
         /// Writes information to a json text file
         /// </summary>
         /// <param name="products">Written products</param>
-        
-        public static void WriteToJson(List<Product> products)
+        /// <param name="path">Path to json file</param>
+
+        public static void WriteToJson(List<Product> products,string path)
         {
             JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
             string Serialized = JsonConvert.SerializeObject(products, settings);
-            using (var sw = new StreamWriter("products.json"))
+            using (var sw = new StreamWriter(path))
             {
                 sw.WriteLine(Serialized);
             }
@@ -32,18 +33,18 @@ namespace WorkWithJson
         /// </summary>
         /// <returns>List of products</returns>
         
-        public static List<Product> ReadFromJson()
+        public static List<Product> ReadFromJson(string path)
         {
-            string jsonString = null;
-            using (var sr = new StreamReader("products.json"))
+            string jsonInfo = null;
+            using (var sr = new StreamReader(path))
             {
-                jsonString = sr.ReadToEnd();
+                jsonInfo = sr.ReadToEnd();
             }
             List<Product> products = null;
-            if (jsonString != null)
+            if (jsonInfo != null)
             {
                 JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
-                products = JsonConvert.DeserializeObject<List<Product>>(jsonString, settings);
+                products = JsonConvert.DeserializeObject<List<Product>>(jsonInfo, settings);
             }
             return products;
         }

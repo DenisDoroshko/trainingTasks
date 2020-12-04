@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwnExceptions", "OwnExcepti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithJson", "WorkWithJson\WorkWithJson.csproj", "{5F536E89-6A6E-42D8-9D90-DFFE2B20B36D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsTests", "ProductsTests\ProductsTests.csproj", "{EAE3C1C3-49E0-4496-AC3E-747A9A4E00F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5F536E89-6A6E-42D8-9D90-DFFE2B20B36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F536E89-6A6E-42D8-9D90-DFFE2B20B36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F536E89-6A6E-42D8-9D90-DFFE2B20B36D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE3C1C3-49E0-4496-AC3E-747A9A4E00F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE3C1C3-49E0-4496-AC3E-747A9A4E00F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE3C1C3-49E0-4496-AC3E-747A9A4E00F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE3C1C3-49E0-4496-AC3E-747A9A4E00F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
