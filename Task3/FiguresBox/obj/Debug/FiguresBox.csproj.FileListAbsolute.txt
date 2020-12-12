@@ -1,0 +1,15 @@
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\FiguresBox.exe.config
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\FiguresBox.exe
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\FiguresBox.pdb
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\FigureReadingWriting.dll
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\Figures.exe
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\OwnExceptions.dll
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\FigureReadingWriting.pdb
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\Figures.pdb
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\Figures.exe.config
+D:\trainingTasks\Task3\FiguresBox\bin\Debug\OwnExceptions.pdb
+D:\trainingTasks\Task3\FiguresBox\obj\Debug\FiguresBox.csprojAssemblyReference.cache
+D:\trainingTasks\Task3\FiguresBox\obj\Debug\FiguresBox.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task3\FiguresBox\obj\Debug\FiguresBox.csproj.CopyComplete
+D:\trainingTasks\Task3\FiguresBox\obj\Debug\FiguresBox.exe
+D:\trainingTasks\Task3\FiguresBox\obj\Debug\FiguresBox.pdb
