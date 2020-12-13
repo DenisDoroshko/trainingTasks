@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlreadyExistsException.cs" />
+    <Compile Include="BoxOverfLowException.cs" />
     <Compile Include="CutFigureException.cs" />
+    <Compile Include="PaintFigureException.cs" />
     <Compile Include="IncorrectParametersException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

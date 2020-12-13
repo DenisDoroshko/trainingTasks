@@ -6,11 +6,24 @@ using System.Threading.Tasks;
 
 namespace OwnExceptions
 {
+    /// <summary>
+    /// Represents a incorrect parameters error
+    /// </summary>
+
     public class IncorrectParametersException:Exception
     {
-        public IncorrectParametersException() : base("Incorrect parameters error")
+        /// <summary>
+        /// Creates a incorrect parameters error
+        /// </summary>
+
+        public IncorrectParametersException() : base("Incorrect parameters error.")
         {
         }
+
+        /// <summary>
+        /// Creates a incorrect parameters error
+        /// </summary>
+
         public IncorrectParametersException(string message) : base(message)
         {
         }

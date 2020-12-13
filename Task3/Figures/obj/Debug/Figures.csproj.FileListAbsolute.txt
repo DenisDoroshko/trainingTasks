@@ -1,10 +1,10 @@
-D:\trainingTasks\Task3\Figures\bin\Debug\Figures.exe.config
-D:\trainingTasks\Task3\Figures\bin\Debug\Figures.exe
 D:\trainingTasks\Task3\Figures\bin\Debug\Figures.pdb
 D:\trainingTasks\Task3\Figures\obj\Debug\Figures.csprojAssemblyReference.cache
 D:\trainingTasks\Task3\Figures\obj\Debug\Figures.csproj.CoreCompileInputs.cache
-D:\trainingTasks\Task3\Figures\obj\Debug\Figures.exe
 D:\trainingTasks\Task3\Figures\obj\Debug\Figures.pdb
 D:\trainingTasks\Task3\Figures\bin\Debug\OwnExceptions.dll
 D:\trainingTasks\Task3\Figures\bin\Debug\OwnExceptions.pdb
 D:\trainingTasks\Task3\Figures\obj\Debug\Figures.csproj.CopyComplete
+D:\trainingTasks\Task3\Figures\bin\Debug\Figures.dll.config
+D:\trainingTasks\Task3\Figures\bin\Debug\Figures.dll
+D:\trainingTasks\Task3\Figures\obj\Debug\Figures.dll

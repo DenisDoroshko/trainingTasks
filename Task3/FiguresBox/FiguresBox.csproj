@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoxOfFigures.cs" />
+    <Compile Include="FiguresBox.cs" />
     <Compile Include="IBoxer.cs" />
     <Compile Include="IBoxGeter.cs" />
     <Compile Include="IBoxInformer.cs" />
@@ -62,6 +62,10 @@
     <ProjectReference Include="..\Figures\Figures.csproj">
       <Project>{fa7fc1d5-69f7-42a8-90d6-187a3a849946}</Project>
       <Name>Figures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OwnExceptions\OwnExceptions.csproj">
+      <Project>{6187bcd6-d067-4bf4-a0e9-70ff0d04833c}</Project>
+      <Name>OwnExceptions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

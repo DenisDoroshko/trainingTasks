@@ -1,12 +1,12 @@
 D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\FigureReadingWriting.dll
 D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\FigureReadingWriting.pdb
-D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\Figures.exe
 D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\OwnExceptions.dll
 D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\Figures.pdb
-D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\Figures.exe.config
 D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\OwnExceptions.pdb
 D:\trainingTasks\Task3\FigureReadingWriting\obj\Debug\FigureReadingWriting.csprojAssemblyReference.cache
 D:\trainingTasks\Task3\FigureReadingWriting\obj\Debug\FigureReadingWriting.csproj.CoreCompileInputs.cache
 D:\trainingTasks\Task3\FigureReadingWriting\obj\Debug\FigureReadingWriting.csproj.CopyComplete
 D:\trainingTasks\Task3\FigureReadingWriting\obj\Debug\FigureReadingWriting.dll
 D:\trainingTasks\Task3\FigureReadingWriting\obj\Debug\FigureReadingWriting.pdb
+D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\Figures.dll
+D:\trainingTasks\Task3\FigureReadingWriting\bin\Debug\Figures.dll.config

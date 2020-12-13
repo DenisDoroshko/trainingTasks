@@ -7,24 +7,24 @@ using System.Threading.Tasks;
 namespace OwnExceptions
 {
     /// <summary>
-    /// Represents a cut figure error
+    /// Represents a box overfLow error
     /// </summary>
 
-    public class CutFigureException:Exception
+    public class BoxOverfLowException:Exception
     {
         /// <summary>
-        /// Creates a cut figure error
+        /// Creates a box overfLow error
         /// </summary>
 
-        public CutFigureException() : base("The figure being cut is larger then original figure.")
+        public BoxOverfLowException() : base("Box overflow.")
         {
         }
 
         /// <summary>
-        /// Creates a cut figure error
+        /// Creates a box overfLow error
         /// </summary>
 
-        public CutFigureException(string message) : base(message)
+        public BoxOverfLowException(string message) : base(message)
         {
         }
     }

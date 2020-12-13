@@ -1,1 +1,118 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Figures><Figure><Name>Circle Plastic</Name><Sides>5 </Sides><Color>Blue</Color></Figure><Figure><Name>Triangle Plastic</Name><Sides>3 3 3 </Sides><Color>Blue</Color></Figure></Figures>
+<?xml version="1.0" encoding="utf-8"?>
+<Figures>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>145 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>255 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>355 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>455 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>555 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>655 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Triangle Plastic</Name>
+    <Sides>3 3 3 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Rectangle Film</Name>
+    <Sides>5 5 5 5 </Sides>
+    <Color>None</Color>
+  </Figure>
+  <Figure>
+    <Name>Square Paper</Name>
+    <Sides>15 15 15 15</Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Triangle Film</Name>
+    <Sides>3 3 3 </Sides>
+    <Color>None</Color>
+  </Figure>
+  <Figure>
+    <Name>Square Paper</Name>
+    <Sides>5 5 5 5</Sides>
+    <Color>Green</Color>
+  </Figure>
+  <Figure>
+    <Name>Square Paper</Name>
+    <Sides>5 5 5 5</Sides>
+    <Color>White</Color>
+  </Figure>
+  <Figure>
+    <Name>Square Paper</Name>
+    <Sides>35 35 35 35</Sides>
+    <Color>Red</Color>
+  </Figure>
+  <Figure>
+    <Name>Square Paper</Name>
+    <Sides>25 25 25 25</Sides>
+    <Color>Red</Color>
+  </Figure>
+  <Figure>
+    <Name>Square Paper</Name>
+    <Sides>15 15 15 15</Sides>
+    <Color>Orange</Color>
+  </Figure>
+  <Figure>
+    <Name>Square Paper</Name>
+    <Sides>115 115 115 115</Sides>
+    <Color>Orange</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>125 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>154 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>2315 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>152 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>5115 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>1345 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>1565 </Sides>
+    <Color>Blue</Color>
+  </Figure>
+</Figures>

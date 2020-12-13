@@ -7,24 +7,24 @@ using System.Threading.Tasks;
 namespace OwnExceptions
 {
     /// <summary>
-    /// Represents a cut figure error
+    /// Represents a paint figure error
     /// </summary>
 
-    public class CutFigureException:Exception
+    public class PaintFigureException:Exception
     {
         /// <summary>
-        /// Creates a cut figure error
+        /// Creates a incorrect parameters error
         /// </summary>
 
-        public CutFigureException() : base("The figure being cut is larger then original figure.")
+        public PaintFigureException() : base("The figure can't be painted.")
         {
         }
 
         /// <summary>
-        /// Creates a cut figure error
+        /// Creates a incorrect parameters error
         /// </summary>
 
-        public CutFigureException(string message) : base(message)
+        public PaintFigureException(string message) : base(message)
         {
         }
     }

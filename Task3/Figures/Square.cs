@@ -8,20 +8,20 @@ using OwnExceptions;
 namespace Figures
 {
     /// <summary>
-    /// The class representing a triangle
+    /// The class representing a square
     /// </summary>
 
-    public class Triangle : Figure
+    public class Square:Figure
     {
         /// <summary>
-        /// Creates an instance of the Triangle class
+        /// Creates an instance of the Square class
         /// </summary>
         /// <param name="sides">Sides of figure</param>
 
-        public Triangle(double[] sides) : base($"{FigureTypes.Triangle}",sides)
+        public Square(double[] sides) : base($"{FigureTypes.Square}", sides)
         {
-            if (sides.Length != 3)
-                throw new IncorrectParametersException("Must be three sides");
+            if (sides.Length != 4)
+                throw new IncorrectParametersException("Must be four sides");
         }
 
         /// <summary>
@@ -31,8 +31,7 @@ namespace Figures
 
         public override double GetArea()
         {
-            var semiPerimeter = GetPerimeter() / 2;
-            return Math.Sqrt(semiPerimeter*(semiPerimeter-Sides[0])* (semiPerimeter - Sides[1])*(semiPerimeter - Sides[2]));
+            return Math.Pow(Sides[0],2);
         }
 
         /// <summary>
@@ -42,7 +41,7 @@ namespace Figures
 
         public override double GetPerimeter()
         {
-            return Sides[0] + Sides[1] + Sides[2];
+            return Sides[0]*4;
         }
     }
 }

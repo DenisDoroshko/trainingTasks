@@ -8,18 +8,19 @@ using OwnExceptions;
 namespace Figures
 {
     /// <summary>
-    /// The class representing a paper figure
+    /// The class representing a film figure
     /// </summary>
 
-    public class PaperFigure:FigureDecorator
+    public class FilmFigure:FigureDecorator
     {
         /// <summary>
-        /// Creates an instance of the PaperFigure class
+        /// Creates an instance of the FilmFigure class
         /// </summary>
         /// <param name="figure">Initial figure</param>
 
-        public PaperFigure(Figure figure) : base($"{figure.Name} {MaterialTypes.Plastic}", figure.Sides, figure)
+        public FilmFigure(Figure figure) : base($"{figure.Name} {MaterialTypes.Plastic}", figure.Sides, figure)
         {
+
         }
 
         /// <summary>
@@ -28,21 +29,9 @@ namespace Figures
         /// <param name="originalFigure">Original figure</param>
         /// <param name="newFigure">New initial figure</param>
 
-        public PaperFigure(FigureDecorator originalFigure, Figure newFigure) : base(originalFigure, newFigure, $"{newFigure.Name} {MaterialTypes.Plastic}", newFigure.Sides)
+        public FilmFigure(FigureDecorator originalFigure, Figure newFigure) : base(originalFigure, newFigure, $"{newFigure.Name} {MaterialTypes.Plastic}", newFigure.Sides)
         {
         }
-
-        /// <summary>
-        /// Protected field of whether the color is changed 
-        /// </summary>
-
-        protected bool isChangedColor = false;
-
-        /// <summary>
-        /// Whether the color was changed
-        /// </summary>
-        
-        public bool IsChangedColor { get { return isChangedColor; } }
 
         /// <summary>
         /// Color of a figure
@@ -52,19 +41,11 @@ namespace Figures
         {
             get
             {
-                return color;
+                return Colors.None;
             }
             set
             {
-                if (isChangedColor == true)
-                {
-                    throw new PaintFigureException("The plastic figure can only be painted once.");
-                }
-                else
-                {
-                    color = value;
-                    isChangedColor = true;
-                }
+                throw new PaintFigureException("The film figure can't be painted.");
             }
         }
 
@@ -93,7 +74,7 @@ namespace Figures
             }
             else
             {
-                var figure = (PaperFigure)obj;
+                var figure = (FilmFigure)obj;
                 for (var i = 0; i < Sides.Length; i++)
                 {
                     if (Sides[i] != figure.Sides[i])
