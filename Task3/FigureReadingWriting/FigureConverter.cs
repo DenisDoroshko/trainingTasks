@@ -14,13 +14,13 @@ namespace FigureReadingWriting
     public static class FigureConverter
     {
         /// <summary>
-        /// Creates a figure frim strings
+        /// Creates a figure from strings
         /// </summary>
-        /// <param name="name">Name of a figure/param>
-        /// <param name="stringSides">Sides of a figure</param>
-        /// <param name="stringColor">Color of a figure</param>
+        /// <param name="name">Figure name</param>
+        /// <param name="stringSides">Figure sides</param>
+        /// <param name="stringColor">Figure color</param>
         /// <returns>Figure</returns>
-        
+
         public static Figure CreateFromStrings(string name, string stringSides, string stringColor)
         {
             string[] names = name.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Figures>
+  <Figure>
+    <Name>Rectangle Plastic</Name>
+    <Sides>200 150 200 150 </Sides>
+    <Color>Red</Color>
+  </Figure>
+</Figures>

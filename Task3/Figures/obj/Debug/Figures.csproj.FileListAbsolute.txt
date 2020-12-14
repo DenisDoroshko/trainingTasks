@@ -8,3 +8,5 @@ D:\trainingTasks\Task3\Figures\obj\Debug\Figures.csproj.CopyComplete
 D:\trainingTasks\Task3\Figures\bin\Debug\Figures.dll.config
 D:\trainingTasks\Task3\Figures\bin\Debug\Figures.dll
 D:\trainingTasks\Task3\Figures\obj\Debug\Figures.dll
+D:\trainingTasks\Task3\Figures\bin\Debug\Figures.xml
+D:\trainingTasks\Task3\Figures\bin\Debug\OwnExceptions.xml

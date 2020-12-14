@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FiguresBox</name>
+    </assembly>
+    <members>
+        <member name="T:FiguresBox.FiguresBox">
+            <summary>
+            Represents a box with figures
+            </summary>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.#ctor">
+            <summary>
+            Creates an instance of the FiguresBox class
+            </summary>
+        </member>
+        <member name="F:FiguresBox.FiguresBox.BoxSize">
+            <summary>
+            Box size
+            </summary>
+        </member>
+        <member name="F:FiguresBox.FiguresBox.figuresList">
+            <summary>
+            Figures list
+            </summary>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.AddFigure(Figures.Figure)">
+            <summary>
+            Add a figure to the list of figures
+            </summary>
+            <param name="givenFigure">Specified figure</param>
+            <returns>True if the operation was completed successfully; otherwise, false</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.ShowByNumber(System.Int32)">
+            <summary>
+            Shows a figure by number
+            </summary>
+            <param name="number">Specified number</param>
+            <returns>Found figure</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.ExtractByNumber(System.Int32)">
+            <summary>
+            Extracts a figure from figures list by number
+            </summary>
+            <param name="number">Specified number</param>
+            <returns>Extracted figure</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.ReplaceByNumber(System.Int32,Figures.Figure)">
+            <summary>
+            Replaces a figure by the specified number
+            </summary>
+            <param name="number">Specified</param>
+            <param name="newfigure">New figure</param>
+            <returns>True if the operation was completed successfully; otherwise, false</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.FindEquivalent(Figures.Figure)">
+            <summary>
+            Searches for the figure equivalent
+            </summary>
+            <param name="givenFigure">Given figure</param>
+            <returns>Found figure</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.GetAllCircles">
+            <summary>
+            Searches for all circles in the figures list
+            </summary>
+            <returns>Circles</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.GetAllFilmFigures">
+            <summary>
+            Searches for all film figures in the figures list
+            </summary>
+            <returns>Film figures</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.GetNeverPaintedPlasticFigures">
+            <summary>
+            Searches for all never painted plastic figures in the figures list
+            </summary>
+            <returns>Film figures</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.ShowQuantity">
+            <summary>
+            Shows quantity of figures
+            </summary>
+            <returns>The quantity of figures</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.ShowAreaSum">
+            <summary>
+            Shows the sum of the areas of the figures
+            </summary>
+            <returns>Sum of the areas of the figures</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.ShowPerimeterSum">
+            <summary>
+            Shows the sum of the perimeters of the figures
+            </summary>
+            <returns>Sum of the perimeters of the figures</returns>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.SaveByStreamWriter(System.String)">
+            <summary>
+            Saves figures using StreamWtirer
+            </summary>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.SaveByStreamWriter(Figures.MaterialTypes,System.String)">
+            <summary>
+            Saves figures using StreamWtirer by specified material
+            </summary>
+            <param name="material">Specified material</param>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.SaveByXmlWriter(System.String)">
+            <summary>
+            Saves figures using XmlWtirer
+            </summary>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.SaveByXmlWriter(Figures.MaterialTypes,System.String)">
+            <summary>
+            Saves figures using StreamWtirer by specified material
+            </summary>
+            <param name="material">Specified material</param>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.LoadByStreamReader(System.String)">
+            <summary>
+            Loads figures using StreamReader
+            </summary>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.FiguresBox.LoadByXmlReader(System.String)">
+            <summary>
+            Loads figures using XmlReader
+            </summary>
+            <param name="path">File path</param>
+        </member>
+        <member name="T:FiguresBox.IBoxer">
+            <summary>
+            The interface for main box functions
+            </summary>
+        </member>
+        <member name="M:FiguresBox.IBoxer.AddFigure(Figures.Figure)">
+            <summary>
+            Add a figure to the list of figures
+            </summary>
+            <param name="givenFigure">Specified figure</param>
+            <returns>True if the operation was completed successfully; otherwise, false</returns>
+        </member>
+        <member name="M:FiguresBox.IBoxer.ShowByNumber(System.Int32)">
+            <summary>
+            Shows a figure by number
+            </summary>
+            <param name="number">Specified number</param>
+            <returns>Found figure</returns>
+        </member>
+        <member name="M:FiguresBox.IBoxer.ExtractByNumber(System.Int32)">
+            <summary>
+            Extracts a figure from figures list by number
+            </summary>
+            <param name="number">Specified number</param>
+            <returns>Extracted figure</returns>
+        </member>
+        <member name="M:FiguresBox.IBoxer.ReplaceByNumber(System.Int32,Figures.Figure)">
+            <summary>
+            Replaces a figure by the specified number
+            </summary>
+            <param name="number">Specified</param>
+            <param name="newfigure">New figure</param>
+            <returns>True if the operation was completed successfully; otherwise, false</returns>
+        </member>
+        <member name="M:FiguresBox.IBoxer.FindEquivalent(Figures.Figure)">
+            <summary>
+            Searches for the figure equivalent
+            </summary>
+            <param name="givenFigure">Given figure</param>
+            <returns>Found figure</returns>
+        </member>
+        <member name="T:FiguresBox.IBoxGeter">
+            <summary>
+            The interface for getting the specified figures
+            </summary>
+        </member>
+        <member name="M:FiguresBox.IBoxGeter.GetAllCircles">
+            <summary>
+            Searches for all circles in the figures list
+            </summary>
+            <returns>Circles</returns>
+        </member>
+        <member name="M:FiguresBox.IBoxGeter.GetAllFilmFigures">
+            <summary>
+            Searches for all film figures in the figures list
+            </summary>
+            <returns>Film figures</returns>
+        </member>
+        <member name="M:FiguresBox.IBoxGeter.GetNeverPaintedPlasticFigures">
+            <summary>
+            Searches for all never painted plastic figures in the figures list
+            </summary>
+            <returns>Film figures</returns>
+        </member>
+        <member name="T:FiguresBox.IBoxInformer">
+            <summary>
+            The interface for showing information about figures
+            </summary>
+        </member>
+        <member name="M:FiguresBox.IBoxInformer.ShowQuantity">
+            <summary>
+            Shows quantity of figures
+            </summary>
+            <returns>The quantity of figures</returns>
+        </member>
+        <member name="M:FiguresBox.IBoxInformer.ShowAreaSum">
+            <summary>
+            Shows the sum of the areas of the figures
+            </summary>
+            <returns>Sum of the areas of the figures</returns>
+        </member>
+        <member name="M:FiguresBox.IBoxInformer.ShowPerimeterSum">
+            <summary>
+            Shows the sum of the perimeters of the figures
+            </summary>
+            <returns>Sum of the perimeters of the figures</returns>
+        </member>
+        <member name="T:FiguresBox.IWriterReader">
+            <summary>
+            The interface for working with xml files
+            </summary>
+        </member>
+        <member name="M:FiguresBox.IWriterReader.SaveByStreamWriter(System.String)">
+            <summary>
+            Saves figures using StreamWtirer
+            </summary>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.IWriterReader.SaveByStreamWriter(Figures.MaterialTypes,System.String)">
+            <summary>
+            Saves figures using StreamWtirer by specified material
+            </summary>
+            <param name="material">Specified material</param>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.IWriterReader.SaveByXmlWriter(System.String)">
+            <summary>
+            Saves figures using XmlWtirer
+            </summary>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.IWriterReader.SaveByXmlWriter(Figures.MaterialTypes,System.String)">
+            <summary>
+            Saves figures using StreamWtirer by specified material
+            </summary>
+            <param name="material">Specified material</param>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.IWriterReader.LoadByStreamReader(System.String)">
+            <summary>
+            Loads figures using StreamReader
+            </summary>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FiguresBox.IWriterReader.LoadByXmlReader(System.String)">
+            <summary>
+            Loads figures using XmlReader
+            </summary>
+            <param name="path">File path</param>
+        </member>
+    </members>
+</doc>

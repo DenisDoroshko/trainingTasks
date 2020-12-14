@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FigureReadingWriting</name>
+    </assembly>
+    <members>
+        <member name="T:FigureReadingWriting.FigureConverter">
+            <summary>
+            Provides method for creating a figure from strings
+            </summary>
+        </member>
+        <member name="M:FigureReadingWriting.FigureConverter.CreateFromStrings(System.String,System.String,System.String)">
+            <summary>
+            Creates a figure from strings
+            </summary>
+            <param name="name">Figure name</param>
+            <param name="stringSides">Figure sides</param>
+            <param name="stringColor">Figure color</param>
+            <returns>Figure</returns>
+        </member>
+        <member name="M:FigureReadingWriting.FigureConverter.CreateEmptyFigure(Figures.FigureTypes,System.Double[])">
+            <summary>
+            Creates a empty figure
+            </summary>
+            <param name="shape">Type of a figure</param>
+            <param name="sides">Sides of a figure</param>
+            <returns>Empty figure</returns>
+        </member>
+        <member name="M:FigureReadingWriting.FigureConverter.CreateFigureWithMaterial(Figures.Figure,Figures.MaterialTypes,Figures.Colors)">
+            <summary>
+            Creates a figure with a material
+            </summary>
+            <param name="figure">Initial empty figure</param>
+            <param name="material">Type of material</param>
+            <param name="color">Color of a figure</param>
+            <returns>Figure wiht a material</returns>
+        </member>
+        <member name="M:FigureReadingWriting.FigureConverter.ParseSides(System.String)">
+            <summary>
+            Converts sides from string to double
+            </summary>
+            <param name="stringSides">String sides</param>
+            <returns>Array of figure sides</returns>
+        </member>
+        <member name="T:FigureReadingWriting.StreamReaderWriter">
+            <summary>
+            Provides methods for reading and writing xml files using StreamReader and StreamWriter
+            </summary>
+        </member>
+        <member name="M:FigureReadingWriting.StreamReaderWriter.Read(System.String)">
+            <summary>
+            Reads figures from a xml file
+            </summary>
+            <param name="path">File path</param>
+            <returns>List of figures</returns>
+        </member>
+        <member name="M:FigureReadingWriting.StreamReaderWriter.Save(System.Collections.Generic.List{Figures.Figure},System.String)">
+            <summary>
+            Saves figures to a xml file
+            </summary>
+            <param name="figures">List of figures</param>
+            <param name="path">File path</param>
+        </member>
+        <member name="M:FigureReadingWriting.StreamReaderWriter.FillFigureNode(System.Xml.XmlDocument,System.Xml.XmlElement,System.String,System.String)">
+            <summary>
+            Fills nodes of xml document
+            </summary>
+            <param name="document">Xml-document</param>
+            <param name="figureNode">Figure node</param>
+            <param name="name">Name of a node</param>
+            <param name="value">Value of a node</param>
+        </member>
+        <member name="T:FigureReadingWriting.XmlReaderWriter">
+            <summary>
+            Provides methods for reading and writing xml files using XmlReader and XmlWriter
+            </summary>
+        </member>
+        <member name="M:FigureReadingWriting.XmlReaderWriter.Save(System.Collections.Generic.List{Figures.Figure},System.String)">
+            <summary>
+            Saves figures to a xml file
+            </summary>
+        </member>
+        <member name="M:FigureReadingWriting.XmlReaderWriter.Read(System.String)">
+            <summary>
+            Reads figures from a xml file
+            </summary>
+            <param name="path">File path</param>
+            <returns>List of figures</returns>
+        </member>
+    </members>
+</doc>

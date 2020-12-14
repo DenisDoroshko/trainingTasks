@@ -4,3 +4,4 @@ D:\trainingTasks\Task3\OwnExceptions\obj\Debug\OwnExceptions.csprojAssemblyRefer
 D:\trainingTasks\Task3\OwnExceptions\obj\Debug\OwnExceptions.csproj.CoreCompileInputs.cache
 D:\trainingTasks\Task3\OwnExceptions\obj\Debug\OwnExceptions.dll
 D:\trainingTasks\Task3\OwnExceptions\obj\Debug\OwnExceptions.pdb
+D:\trainingTasks\Task3\OwnExceptions\bin\Debug\OwnExceptions.xml

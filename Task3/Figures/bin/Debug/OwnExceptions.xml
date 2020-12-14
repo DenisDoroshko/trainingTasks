@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OwnExceptions</name>
+    </assembly>
+    <members>
+        <member name="T:OwnExceptions.AlreadyExistsException">
+            <summary>
+            Represents an already exists figure error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.AlreadyExistsException.#ctor">
+            <summary>
+            Creates an already exists figure error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.AlreadyExistsException.#ctor(System.String)">
+            <summary>
+            Creates an already exists figure error
+            </summary>
+        </member>
+        <member name="T:OwnExceptions.BoxOverfLowException">
+            <summary>
+            Represents a box overfLow error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.BoxOverfLowException.#ctor">
+            <summary>
+            Creates a box overfLow error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.BoxOverfLowException.#ctor(System.String)">
+            <summary>
+            Creates a box overfLow error
+            </summary>
+        </member>
+        <member name="T:OwnExceptions.CutFigureException">
+            <summary>
+            Represents a cut figure error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.CutFigureException.#ctor">
+            <summary>
+            Creates a cut figure error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.CutFigureException.#ctor(System.String)">
+            <summary>
+            Creates a cut figure error
+            </summary>
+        </member>
+        <member name="T:OwnExceptions.PaintFigureException">
+            <summary>
+            Represents a paint figure error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.PaintFigureException.#ctor">
+            <summary>
+            Creates a incorrect parameters error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.PaintFigureException.#ctor(System.String)">
+            <summary>
+            Creates a incorrect parameters error
+            </summary>
+        </member>
+        <member name="T:OwnExceptions.IncorrectParametersException">
+            <summary>
+            Represents a incorrect parameters error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.IncorrectParametersException.#ctor">
+            <summary>
+            Creates a incorrect parameters error
+            </summary>
+        </member>
+        <member name="M:OwnExceptions.IncorrectParametersException.#ctor(System.String)">
+            <summary>
+            Creates a incorrect parameters error
+            </summary>
+        </member>
+    </members>
+</doc>

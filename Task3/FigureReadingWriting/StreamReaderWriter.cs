@@ -60,8 +60,9 @@ namespace FigureReadingWriting
         /// <summary>
         /// Saves figures to a xml file
         /// </summary>
+        /// <param name="figures">List of figures</param>
         /// <param name="path">File path</param>
-        
+
         public static void Save(List<Figure> figures, string path)
         {
             XmlDocument document = new XmlDocument();
