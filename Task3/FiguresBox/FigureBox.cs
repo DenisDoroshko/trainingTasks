@@ -14,13 +14,13 @@ namespace FiguresBox
     /// Represents a box with figures
     /// </summary>
     
-    public class FiguresBox:IBoxer,IBoxGeter,IBoxInformer,IWriterReader
+    public class FigureBox:IBoxer,IBoxGeter,IBoxInformer,IWriterReader
     {
         /// <summary>
         /// Creates an instance of the FiguresBox class
         /// </summary>
         
-        public FiguresBox()
+        public FigureBox()
         {
             figuresList = new List<Figure>(BoxSize);
         }
@@ -43,9 +43,12 @@ namespace FiguresBox
         /// <param name="givenFigure">Specified figure</param>
         /// <returns>True if the operation was completed successfully; otherwise, false</returns>
 
-        public bool AddFigure(Figure givenFigure)
+        public void AddFigure(Figure givenFigure)
         {
-            bool isAdded = false;
+            if (givenFigure == null)
+            {
+                throw new ArgumentNullException();
+            }
             if (figuresList.Count >= BoxSize)
             {
                 throw new BoxOverfLowException($"The box can only contain {BoxSize} figures");
@@ -55,12 +58,7 @@ namespace FiguresBox
                 if (figure.Equals(givenFigure))
                     throw new AlreadyExistsException();
             }
-            if (givenFigure != null)
-            {
-                figuresList.Add(givenFigure);
-                isAdded = true;
-            }      
-            return isAdded;
+            figuresList.Add(givenFigure);
         }
 
         /// <summary>

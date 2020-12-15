@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Figures>
   <Figure>
-    <Name>Rectangle Plastic</Name>
-    <Sides>200 150 200 150 </Sides>
-    <Color>Red</Color>
+    <Name>Circle Film</Name>
+    <Sides>1000,5 </Sides>
+    <Color>None</Color>
+  </Figure>
+  <Figure>
+    <Name>Circle Plastic</Name>
+    <Sides>1000,5 </Sides>
+    <Color>None</Color>
   </Figure>
 </Figures>

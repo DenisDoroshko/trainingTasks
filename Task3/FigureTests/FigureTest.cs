@@ -77,9 +77,9 @@ namespace FigureTests
             Assert.AreEqual(expected, result);
         }
         [DataTestMethod]
-        [DataRow(1400,35, 40, 35, 40)]
-        [DataRow(690,23, 30, 23, 30)]
-        [DataRow(150,15, 10, 15, 10)]
+        [DataRow(150,35, 40, 35, 40)]
+        [DataRow(106,23, 30, 23, 30)]
+        [DataRow(50,15, 10, 15, 10)]
         public void CalculatePerimeter(double expected, double firstSide, double secondSide, double thirdSide, double fourthSide)
         {
             //Arange

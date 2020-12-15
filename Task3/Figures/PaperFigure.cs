@@ -18,7 +18,7 @@ namespace Figures
         /// </summary>
         /// <param name="figure">Initial figure</param>
 
-        public PaperFigure(Figure figure) : base($"{figure.Name} {MaterialTypes.Plastic}", figure.Sides, figure)
+        public PaperFigure(Figure figure) : base($"{figure.Name} {MaterialTypes.Paper}", figure.Sides, figure)
         {
         }
 
@@ -28,7 +28,7 @@ namespace Figures
         /// <param name="originalFigure">Original figure</param>
         /// <param name="newFigure">New initial figure</param>
 
-        public PaperFigure(FigureDecorator originalFigure, Figure newFigure) : base(originalFigure, newFigure, $"{newFigure.Name} {MaterialTypes.Plastic}", newFigure.Sides)
+        public PaperFigure(FigureDecorator originalFigure, Figure newFigure) : base(originalFigure, newFigure, $"{newFigure.Name} {MaterialTypes.Paper}", newFigure.Sides)
         {
         }
 
@@ -94,14 +94,21 @@ namespace Figures
             else
             {
                 var figure = (PaperFigure)obj;
-                for (var i = 0; i < Sides.Length; i++)
+                if (Sides.Length == figure.Sides.Length)
                 {
-                    if (Sides[i] != figure.Sides[i])
+                    for (var i = 0; i < Sides.Length; i++)
                     {
-                        return false;
+                        if (Sides[i] != figure.Sides[i])
+                        {
+                            return false;
+                        }
                     }
+                    return Name == figure.Name && Color == figure.Color;
                 }
-                return Name == figure.Name && Color == figure.Color;
+                else
+                {
+                    return false;
+                }
             }
         }
 

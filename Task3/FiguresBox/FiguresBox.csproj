@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FiguresBox.cs" />
+    <Compile Include="FigureBox.cs" />
     <Compile Include="IBoxer.cs" />
     <Compile Include="IBoxGeter.cs" />
     <Compile Include="IBoxInformer.cs" />

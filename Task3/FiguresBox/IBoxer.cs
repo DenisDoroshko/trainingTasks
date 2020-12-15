@@ -19,7 +19,7 @@ namespace FiguresBox
         /// <param name="givenFigure">Specified figure</param>
         /// <returns>True if the operation was completed successfully; otherwise, false</returns>
 
-        bool AddFigure(Figure givenFigure);
+        void AddFigure(Figure givenFigure);
 
         /// <summary>
         /// Shows a figure by number

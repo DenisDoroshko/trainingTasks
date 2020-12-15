@@ -88,14 +88,22 @@ namespace Figures
             else
             {
                 var figure = (PlasticFigure)obj;
-                for(var i=0;i<Sides.Length;i++)
+                if (Sides.Length==figure.Sides.Length)
                 {
-                    if (Sides[i] != figure.Sides[i])
+                    for (var i = 0; i < Sides.Length; i++)
                     {
-                        return false;
+                        if (Sides[i] != figure.Sides[i])
+                        {
+                            return false;
+                        }
                     }
+                    return Name == figure.Name && Color == figure.Color;
                 }
-                return Name == figure.Name && Color == figure.Color;
+                else
+                {
+                    return false;
+                }
+                
             }
         }
 

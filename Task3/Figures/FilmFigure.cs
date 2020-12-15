@@ -18,7 +18,7 @@ namespace Figures
         /// </summary>
         /// <param name="figure">Initial figure</param>
 
-        public FilmFigure(Figure figure) : base($"{figure.Name} {MaterialTypes.Plastic}", figure.Sides, figure)
+        public FilmFigure(Figure figure) : base($"{figure.Name} {MaterialTypes.Film}", figure.Sides, figure)
         {
 
         }
@@ -29,7 +29,7 @@ namespace Figures
         /// <param name="originalFigure">Original figure</param>
         /// <param name="newFigure">New initial figure</param>
 
-        public FilmFigure(FigureDecorator originalFigure, Figure newFigure) : base(originalFigure, newFigure, $"{newFigure.Name} {MaterialTypes.Plastic}", newFigure.Sides)
+        public FilmFigure(FigureDecorator originalFigure, Figure newFigure) : base(originalFigure, newFigure, $"{newFigure.Name} {MaterialTypes.Film}", newFigure.Sides)
         {
         }
 
@@ -75,14 +75,21 @@ namespace Figures
             else
             {
                 var figure = (FilmFigure)obj;
-                for (var i = 0; i < Sides.Length; i++)
+                if (Sides.Length == figure.Sides.Length)
                 {
-                    if (Sides[i] != figure.Sides[i])
+                    for (var i = 0; i < Sides.Length; i++)
                     {
-                        return false;
+                        if (Sides[i] != figure.Sides[i])
+                        {
+                            return false;
+                        }
                     }
+                    return Name == figure.Name && Color == figure.Color;
                 }
-                return Name == figure.Name && Color == figure.Color;
+                else
+                {
+                    return false;
+                }
             }
         }
 
