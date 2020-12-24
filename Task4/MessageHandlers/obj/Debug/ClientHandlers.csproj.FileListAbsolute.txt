@@ -1,0 +1,12 @@
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\MessageHandlers.dll
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\MessageHandlers.pdb
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\TextTransliteration.dll
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\NetworkModules.pdb
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\TextTransliteration.pdb
+D:\trainingTasks\Task4\MessageHandlers\obj\Debug\ClientHandlers.csprojAssemblyReference.cache
+D:\trainingTasks\Task4\MessageHandlers\obj\Debug\ClientHandlers.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task4\MessageHandlers\obj\Debug\ClientHandlers.csproj.CopyComplete
+D:\trainingTasks\Task4\MessageHandlers\obj\Debug\MessageHandlers.dll
+D:\trainingTasks\Task4\MessageHandlers\obj\Debug\MessageHandlers.pdb
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\NetworkModules.dll
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\NetworkModules.dll.config

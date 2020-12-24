@@ -1,0 +1,10 @@
+D:\trainingTasks\Task4\NetworkModules\bin\Debug\NetworkModules.pdb
+D:\trainingTasks\Task4\NetworkModules\obj\Debug\NetworkModules.csprojAssemblyReference.cache
+D:\trainingTasks\Task4\NetworkModules\obj\Debug\NetworkModules.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task4\NetworkModules\obj\Debug\NetworkModules.pdb
+D:\trainingTasks\Task4\NetworkModules\bin\Debug\TextTransliteration.dll
+D:\trainingTasks\Task4\NetworkModules\bin\Debug\TextTransliteration.pdb
+D:\trainingTasks\Task4\NetworkModules\obj\Debug\NetworkModules.csproj.CopyComplete
+D:\trainingTasks\Task4\NetworkModules\bin\Debug\NetworkModules.dll.config
+D:\trainingTasks\Task4\NetworkModules\bin\Debug\NetworkModules.dll
+D:\trainingTasks\Task4\NetworkModules\obj\Debug\NetworkModules.dll

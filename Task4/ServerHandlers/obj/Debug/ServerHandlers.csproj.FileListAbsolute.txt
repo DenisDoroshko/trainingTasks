@@ -1,0 +1,10 @@
+D:\trainingTasks\Task4\ServerHandlers\bin\Debug\ServerHandlers.dll
+D:\trainingTasks\Task4\ServerHandlers\bin\Debug\ServerHandlers.pdb
+D:\trainingTasks\Task4\ServerHandlers\bin\Debug\NetworkModules.pdb
+D:\trainingTasks\Task4\ServerHandlers\obj\Debug\ServerHandlers.csprojAssemblyReference.cache
+D:\trainingTasks\Task4\ServerHandlers\obj\Debug\ServerHandlers.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task4\ServerHandlers\obj\Debug\ServerHandlers.csproj.CopyComplete
+D:\trainingTasks\Task4\ServerHandlers\obj\Debug\ServerHandlers.dll
+D:\trainingTasks\Task4\ServerHandlers\obj\Debug\ServerHandlers.pdb
+D:\trainingTasks\Task4\ServerHandlers\bin\Debug\NetworkModules.dll
+D:\trainingTasks\Task4\ServerHandlers\bin\Debug\NetworkModules.dll.config

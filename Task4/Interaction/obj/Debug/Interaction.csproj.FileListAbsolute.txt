@@ -1,0 +1,13 @@
+D:\trainingTasks\Task4\Interaction\bin\Debug\Interaction.exe.config
+D:\trainingTasks\Task4\Interaction\bin\Debug\Interaction.exe
+D:\trainingTasks\Task4\Interaction\bin\Debug\Interaction.pdb
+D:\trainingTasks\Task4\Interaction\obj\Debug\Interaction.csprojAssemblyReference.cache
+D:\trainingTasks\Task4\Interaction\obj\Debug\Interaction.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task4\Interaction\obj\Debug\Interaction.exe
+D:\trainingTasks\Task4\Interaction\obj\Debug\Interaction.pdb
+D:\trainingTasks\Task4\Interaction\bin\Debug\NetworkModules.exe
+D:\trainingTasks\Task4\Interaction\bin\Debug\NetworkModules.pdb
+D:\trainingTasks\Task4\Interaction\bin\Debug\NetworkModules.exe.config
+D:\trainingTasks\Task4\Interaction\obj\Debug\Interaction.csproj.CopyComplete
+D:\trainingTasks\Task4\Interaction\bin\Debug\TextTransliteration.dll
+D:\trainingTasks\Task4\Interaction\bin\Debug\TextTransliteration.pdb
