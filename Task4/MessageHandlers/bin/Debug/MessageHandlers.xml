@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MessageHandlers</name>
+    </assembly>
+    <members>
+        <member name="T:ClientHandlers.AnonimousClientHandler">
+            <summary>
+            Type for handling the event of receiving a message from the server
+            </summary>
+        </member>
+        <member name="M:ClientHandlers.AnonimousClientHandler.#ctor">
+            <summary>
+            Creates an instance of the AnonimousClientHandler class
+            </summary>
+        </member>
+        <member name="P:ClientHandlers.AnonimousClientHandler.Messages">
+            <summary>
+            List of messages from server
+            </summary>
+        </member>
+        <member name="M:ClientHandlers.AnonimousClientHandler.SubscribeToEvent(NetworkModules.Client)">
+            <summary>
+            Subscribes a type to an event
+            </summary>
+            <param name="client">Given client</param>
+        </member>
+        <member name="T:ClientHandlers.LambdaClientHandler">
+            <summary>
+            Type for handling the event of receiving a message from the server
+            </summary>
+        </member>
+        <member name="M:ClientHandlers.LambdaClientHandler.#ctor">
+            <summary>
+            Creates an instance of the AnonimousClientHandler class
+            </summary>
+        </member>
+        <member name="P:ClientHandlers.LambdaClientHandler.Messages">
+            <summary>
+            List of messages from server
+            </summary>
+        </member>
+        <member name="M:ClientHandlers.LambdaClientHandler.SubscribeToEvent(NetworkModules.Client)">
+            <summary>
+            Subscribes a type to an event
+            </summary>
+            <param name="client">Given client</param>
+        </member>
+    </members>
+</doc>

@@ -8,3 +8,5 @@ D:\trainingTasks\Task4\ServerHandlers\obj\Debug\ServerHandlers.dll
 D:\trainingTasks\Task4\ServerHandlers\obj\Debug\ServerHandlers.pdb
 D:\trainingTasks\Task4\ServerHandlers\bin\Debug\NetworkModules.dll
 D:\trainingTasks\Task4\ServerHandlers\bin\Debug\NetworkModules.dll.config
+D:\trainingTasks\Task4\ServerHandlers\bin\Debug\ServerHandlers.xml
+D:\trainingTasks\Task4\ServerHandlers\bin\Debug\NetworkModules.xml

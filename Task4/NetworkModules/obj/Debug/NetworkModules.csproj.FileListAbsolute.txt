@@ -8,3 +8,5 @@ D:\trainingTasks\Task4\NetworkModules\obj\Debug\NetworkModules.csproj.CopyComple
 D:\trainingTasks\Task4\NetworkModules\bin\Debug\NetworkModules.dll.config
 D:\trainingTasks\Task4\NetworkModules\bin\Debug\NetworkModules.dll
 D:\trainingTasks\Task4\NetworkModules\obj\Debug\NetworkModules.dll
+D:\trainingTasks\Task4\NetworkModules\bin\Debug\NetworkModules.xml
+D:\trainingTasks\Task4\NetworkModules\bin\Debug\TextTransliteration.xml

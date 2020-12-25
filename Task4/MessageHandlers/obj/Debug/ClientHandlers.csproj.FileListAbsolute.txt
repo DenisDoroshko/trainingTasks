@@ -10,3 +10,6 @@ D:\trainingTasks\Task4\MessageHandlers\obj\Debug\MessageHandlers.dll
 D:\trainingTasks\Task4\MessageHandlers\obj\Debug\MessageHandlers.pdb
 D:\trainingTasks\Task4\MessageHandlers\bin\Debug\NetworkModules.dll
 D:\trainingTasks\Task4\MessageHandlers\bin\Debug\NetworkModules.dll.config
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\MessageHandlers.xml
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\NetworkModules.xml
+D:\trainingTasks\Task4\MessageHandlers\bin\Debug\TextTransliteration.xml

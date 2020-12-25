@@ -3,3 +3,5 @@ D:\trainingTasks\Task4\TextTransliteration\bin\Debug\TextTransliteration.pdb
 D:\trainingTasks\Task4\TextTransliteration\obj\Debug\TextTransliteration.csproj.CoreCompileInputs.cache
 D:\trainingTasks\Task4\TextTransliteration\obj\Debug\TextTransliteration.dll
 D:\trainingTasks\Task4\TextTransliteration\obj\Debug\TextTransliteration.pdb
+D:\trainingTasks\Task4\TextTransliteration\obj\Debug\TextTransliteration.csprojAssemblyReference.cache
+D:\trainingTasks\Task4\TextTransliteration\bin\Debug\TextTransliteration.xml

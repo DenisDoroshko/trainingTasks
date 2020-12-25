@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetworkModules</name>
+    </assembly>
+    <members>
+        <member name="T:NetworkModules.Client">
+            <summary>
+            Class representing a client of the network
+            </summary>
+        </member>
+        <member name="E:NetworkModules.Client.ReceiveMessageFromServer">
+            <summary>
+            Event of receiving a message from the server
+            </summary>
+        </member>
+        <member name="P:NetworkModules.Client.Name">
+            <summary>
+            Name of a client
+            </summary>
+        </member>
+        <member name="P:NetworkModules.Client.ID">
+            <summary>
+            ID of a client
+            </summary>
+        </member>
+        <member name="M:NetworkModules.Client.#ctor(System.String)">
+            <summary>
+            Creates an instance of the Client class
+            </summary>
+            <param name="name">Name of the client</param>
+        </member>
+        <member name="M:NetworkModules.Client.SendMessage(System.String,System.String,System.Int32)">
+            <summary>
+            Sends a message to the server
+            </summary>
+            <param name="message">Given message</param>
+            <param name="address">Address</param>
+            <param name="port">Port</param>
+        </member>
+        <member name="M:NetworkModules.Client.ConnectToServer(System.String,System.Int32)">
+            <summary>
+            Connects to the server
+            </summary>
+            <param name="address">Address</param>
+            <param name="port">Port</param>
+        </member>
+        <member name="M:NetworkModules.Client.GetMessage">
+            <summary>
+            Gets message from the server
+            </summary>
+        </member>
+        <member name="T:NetworkModules.ReceiveHandler">
+            <summary>
+            Receive message delegate
+            </summary>
+            <param name="message">Given message</param>
+        </member>
+        <member name="T:NetworkModules.NetworkModule">
+            <summary>
+            Class representing network modules
+            </summary>
+        </member>
+        <member name="P:NetworkModules.NetworkModule.CurrentSocket">
+            <summary>
+            Current socket
+            </summary>
+        </member>
+        <member name="T:NetworkModules.Server">
+            <summary>
+            Class representing a server of the network
+            </summary>
+        </member>
+        <member name="E:NetworkModules.Server.ReceiveMessageFromClient">
+            <summary>
+            Event of receiving a message from the client
+            </summary>
+        </member>
+        <member name="P:NetworkModules.Server.Address">
+            <summary>
+            Server adress
+            </summary>
+        </member>
+        <member name="P:NetworkModules.Server.Port">
+            <summary>
+            Using port
+            </summary>
+        </member>
+        <member name="M:NetworkModules.Server.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates an instance of the Server class
+            </summary>
+            <param name="address">Address</param>
+            <param name="port">Port</param>
+        </member>
+        <member name="M:NetworkModules.Server.StartWork(System.String)">
+            <summary>
+            Runs the server
+            </summary>
+            <param name="answerForClients">Answer for clients</param>
+        </member>
+        <member name="M:NetworkModules.Server.SendAnswer(System.Net.Sockets.Socket,System.String)">
+            <summary>
+            Sends answer to the client
+            </summary>
+            <param name="socket"></param>
+            <param name="answer"></param>
+        </member>
+    </members>
+</doc>

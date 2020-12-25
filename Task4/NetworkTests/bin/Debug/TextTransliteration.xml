@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TextTransliteration</name>
+    </assembly>
+    <members>
+        <member name="T:TextTransliteration.TextRecoder">
+            <summary>
+            Class for writing Russian letters in transliteration
+            </summary>
+        </member>
+        <member name="M:TextTransliteration.TextRecoder.RecodeText(System.String)">
+            <summary>
+            Writes Russian letters in transliteration
+            </summary>
+            <param name="text">Given text</param>
+            <returns>Russian letters in transliteration</returns>
+        </member>
+        <member name="F:TextTransliteration.TextRecoder.transliter">
+            <summary>
+            Letter matching dictionary
+            </summary>
+        </member>
+    </members>
+</doc>

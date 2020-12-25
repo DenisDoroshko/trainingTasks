@@ -1,0 +1,17 @@
+D:\trainingTasks\Task4\Check\bin\Debug\Check.exe.config
+D:\trainingTasks\Task4\Check\bin\Debug\Check.exe
+D:\trainingTasks\Task4\Check\bin\Debug\Check.pdb
+D:\trainingTasks\Task4\Check\bin\Debug\MessageHandlers.dll
+D:\trainingTasks\Task4\Check\bin\Debug\NetworkModules.dll
+D:\trainingTasks\Task4\Check\bin\Debug\ServerHandlers.dll
+D:\trainingTasks\Task4\Check\bin\Debug\TextTransliteration.dll
+D:\trainingTasks\Task4\Check\bin\Debug\MessageHandlers.pdb
+D:\trainingTasks\Task4\Check\bin\Debug\NetworkModules.pdb
+D:\trainingTasks\Task4\Check\bin\Debug\NetworkModules.dll.config
+D:\trainingTasks\Task4\Check\bin\Debug\ServerHandlers.pdb
+D:\trainingTasks\Task4\Check\bin\Debug\TextTransliteration.pdb
+D:\trainingTasks\Task4\Check\obj\Debug\Check.csprojAssemblyReference.cache
+D:\trainingTasks\Task4\Check\obj\Debug\Check.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task4\Check\obj\Debug\Check.csproj.CopyComplete
+D:\trainingTasks\Task4\Check\obj\Debug\Check.exe
+D:\trainingTasks\Task4\Check\obj\Debug\Check.pdb

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServerHandlers</name>
+    </assembly>
+    <members>
+        <member name="T:ServerHandlers.ClientInfo">
+            <summary>
+            Class for storing client information
+            </summary>
+        </member>
+        <member name="M:ServerHandlers.ClientInfo.#ctor(System.String)">
+            <summary>
+            Creates an instance of the ClientInfo class
+            </summary>
+            <param name="identification">Name and id of a client</param>
+        </member>
+        <member name="P:ServerHandlers.ClientInfo.Identification">
+            <summary>
+            Name and id of a client
+            </summary>
+        </member>
+        <member name="P:ServerHandlers.ClientInfo.Messages">
+            <summary>
+            Messages from this client
+            </summary>
+        </member>
+        <member name="T:ServerHandlers.LambdaServerHandler">
+            <summary>
+            Type for handling the event of receiving a message from the client
+            </summary>
+        </member>
+        <member name="M:ServerHandlers.LambdaServerHandler.#ctor">
+            <summary>
+            Creates an instance of the LambdaServerHandler class
+            </summary>
+        </member>
+        <member name="P:ServerHandlers.LambdaServerHandler.Clients">
+            <summary>
+            List of clients
+            </summary>
+        </member>
+        <member name="M:ServerHandlers.LambdaServerHandler.SubscribeToEvent(NetworkModules.Server)">
+            <summary>
+            Subscribes a type to an event
+            </summary>
+            <param name="server">Given  server</param>
+        </member>
+        <member name="M:ServerHandlers.LambdaServerHandler.GetClient(System.String)">
+            <summary>
+            Gets a client by name and id or creates a new client
+            </summary>
+            <param name="message">Given message</param>
+            <returns>Found or created client</returns>
+        </member>
+        <member name="T:ServerHandlers.AnonimousServerHandler">
+            <summary>
+            Type for handling the event of receiving a message from the client
+            </summary>
+        </member>
+        <member name="M:ServerHandlers.AnonimousServerHandler.#ctor">
+            <summary>
+            Creates an instance of the AnonimousServerHandler class
+            </summary>
+        </member>
+        <member name="P:ServerHandlers.AnonimousServerHandler.Clients">
+            <summary>
+            List of clients
+            </summary>
+        </member>
+        <member name="M:ServerHandlers.AnonimousServerHandler.SubscribeToEvent(NetworkModules.Server)">
+            <summary>
+            Subscribes a type to an event
+            </summary>
+            <param name="server">Given  server</param>
+        </member>
+    </members>
+</doc>

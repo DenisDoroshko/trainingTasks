@@ -5,9 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TextTransliteration
-{
+{   
+    /// <summary>
+    /// Class for writing Russian letters in transliteration
+    /// </summary>
+    
     public class TextRecoder
     {
+        /// <summary>
+        /// Writes Russian letters in transliteration
+        /// </summary>
+        /// <param name="text">Given text</param>
+        /// <returns>Russian letters in transliteration</returns>
+        
         public static string RecodeText(string text)
         {
             StringBuilder transliteText = new StringBuilder();
@@ -25,6 +35,10 @@ namespace TextTransliteration
             return transliteText.ToString();
         }
 
+        /// <summary>
+        /// Letter matching dictionary
+        /// </summary>
+        
         private static Dictionary<char, string> transliter = new Dictionary<char, string>()
         {
             ['а'] = "a",

@@ -7,9 +7,32 @@ using NetworkModules;
 
 namespace ServerHandlers
 {
-    public class ServerHandler
+    /// <summary>
+    /// Type for handling the event of receiving a message from the client
+    /// </summary>
+    
+    public class AnonimousServerHandler
     {
+        /// <summary>
+        /// Creates an instance of the AnonimousServerHandler class
+        /// </summary>
+        
+        public AnonimousServerHandler()
+        {
+            Clients = new List<ClientInfo>();
+        }
+
+        /// <summary>
+        /// List of clients
+        /// </summary>
+        
         public List<ClientInfo> Clients {get;set;}
+        
+        /// <summary>
+        /// Subscribes a type to an event
+        /// </summary>
+        /// <param name="server">Given  server</param>
+        
         public void SubscribeToEvent(Server server)
         {
             ReceiveHandler handler = delegate (string message)
