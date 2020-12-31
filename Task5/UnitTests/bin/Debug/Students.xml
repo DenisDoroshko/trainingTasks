@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Students</name>
+    </assembly>
+    <members>
+        <member name="T:Students.Student">
+            <summary>
+            Represents a test results
+            </summary>
+        </member>
+        <member name="M:Students.Student.#ctor">
+            <summary>
+            Creates an instance of Student class
+            </summary>
+        </member>
+        <member name="M:Students.Student.#ctor(System.String,System.String,System.DateTime,System.Int32)">
+            <summary>
+            Creates an instance of Student class
+            </summary>
+            <param name="fullName">Full name of student</param>
+            <param name="testName">Test name</param>
+            <param name="testingDate">Testing date</param>
+            <param name="testMark">Test mark</param>
+        </member>
+        <member name="P:Students.Student.FullName">
+            <summary>
+            Full name of  the student
+            </summary>
+        </member>
+        <member name="P:Students.Student.TestName">
+            <summary>
+            Test name
+            </summary>
+        </member>
+        <member name="P:Students.Student.TestingDate">
+            <summary>
+            Testing date
+            </summary>
+        </member>
+        <member name="P:Students.Student.TestMark">
+            <summary>
+            Test mark
+            </summary>
+        </member>
+        <member name="M:Students.Student.CompareTo(System.Object)">
+            <summary>
+            Compares test results by test date
+            </summary>
+            <param name="obj">Second student</param>
+            <returns>Result of a comparison</returns>
+        </member>
+        <member name="M:Students.Student.ToString">
+            <summary>
+            Converts node to string
+            </summary>
+            <returns>String represention of the class</returns>
+        </member>
+        <member name="M:Students.Student.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:Students.Student.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+    </members>
+</doc>

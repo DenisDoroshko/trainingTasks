@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<BinaryTreeOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RootNode>
+    <Data>
+      <FullName>Ivanov Petr</FullName>
+      <TestName>OOP</TestName>
+      <TestingDate>2015-06-11T00:00:00</TestingDate>
+      <TestMark>8</TestMark>
+    </Data>
+    <RightNode>
+      <Data>
+        <FullName>Ivanov Ivan</FullName>
+        <TestName>OOP</TestName>
+        <TestingDate>2016-11-23T00:00:00</TestingDate>
+        <TestMark>7</TestMark>
+      </Data>
+      <RightNode>
+        <Data>
+          <FullName>Ivanov Alexander</FullName>
+          <TestName>OOP</TestName>
+          <TestingDate>2018-10-12T00:00:00</TestingDate>
+          <TestMark>9</TestMark>
+        </Data>
+      </RightNode>
+    </RightNode>
+  </RootNode>
+</BinaryTreeOfStudent>

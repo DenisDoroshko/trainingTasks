@@ -1,0 +1,8 @@
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\Students.dll.config
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\Students.dll
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\Students.pdb
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\Students.csprojAssemblyReference.cache
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\Students.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\Students.dll
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\Students.pdb
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\Students.xml

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TreeSerialization</name>
+    </assembly>
+    <members>
+        <member name="T:TreeSerialization.TreeSerializer">
+            <summary>
+            Represents a class for serializing and deserializing a tree
+            </summary>
+        </member>
+        <member name="M:TreeSerialization.TreeSerializer.SerializeToXml``1(System.String,``0)">
+            <summary>
+            Serializes a tree to xml file
+            </summary>
+            <typeparam name="T">Any type</typeparam>
+            <param name="filePath">File path</param>
+            <param name="tree">Tree</param>
+        </member>
+        <member name="M:TreeSerialization.TreeSerializer.DeserializeFromXml``1(System.String,``0@)">
+            <summary>
+            Deserializes a tree from xml file
+            </summary>
+            <typeparam name="T">Any type</typeparam>
+            <param name="filePath">File path</param>
+            <param name="tree">Tree</param>
+        </member>
+    </members>
+</doc>

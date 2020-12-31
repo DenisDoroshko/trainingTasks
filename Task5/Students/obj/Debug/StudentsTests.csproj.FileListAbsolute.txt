@@ -1,0 +1,13 @@
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\StudentsTests.exe.config
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\StudentsTests.exe
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\StudentsTests.pdb
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\StudentsTests.csprojAssemblyReference.cache
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\StudentsTests.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\StudentsTests.exe
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\StudentsTests.pdb
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\BinaryTrees.exe
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\TreeSerialization.dll
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\BinaryTrees.pdb
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\BinaryTrees.exe.config
+D:\trainingTasks\Task5\StudentsTests\bin\Debug\TreeSerialization.pdb
+D:\trainingTasks\Task5\StudentsTests\obj\Debug\StudentsTests.csproj.CopyComplete

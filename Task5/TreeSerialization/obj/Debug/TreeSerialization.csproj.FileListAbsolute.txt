@@ -1,0 +1,12 @@
+D:\trainingTasks\Task5\TreeSerialization\bin\Debug\TreeSerialization.dll
+D:\trainingTasks\Task5\TreeSerialization\bin\Debug\TreeSerialization.pdb
+D:\trainingTasks\Task5\TreeSerialization\obj\Debug\TreeSerialization.csprojAssemblyReference.cache
+D:\trainingTasks\Task5\TreeSerialization\obj\Debug\TreeSerialization.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task5\TreeSerialization\obj\Debug\TreeSerialization.dll
+D:\trainingTasks\Task5\TreeSerialization\obj\Debug\TreeSerialization.pdb
+D:\trainingTasks\Task5\TreeSerialization\bin\Debug\BinaryTrees.pdb
+D:\trainingTasks\Task5\TreeSerialization\obj\Debug\TreeSerialization.csproj.CopyComplete
+D:\trainingTasks\Task5\TreeSerialization\bin\Debug\BinaryTrees.dll
+D:\trainingTasks\Task5\TreeSerialization\bin\Debug\BinaryTrees.dll.config
+D:\trainingTasks\Task5\TreeSerialization\bin\Debug\TreeSerialization.xml
+D:\trainingTasks\Task5\TreeSerialization\bin\Debug\BinaryTrees.xml

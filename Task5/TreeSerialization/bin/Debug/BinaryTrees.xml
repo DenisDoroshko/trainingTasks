@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BinaryTrees</name>
+    </assembly>
+    <members>
+        <member name="T:BinaryTrees.BinaryTree`1">
+            <summary>
+            The class representing a binary tree for storing data
+            </summary>
+            <typeparam name="T">Any type supports comparisons</typeparam>
+        </member>
+        <member name="M:BinaryTrees.BinaryTree`1.#ctor">
+            <summary>
+            Creates an instance of BinaryTree class
+            </summary>
+        </member>
+        <member name="P:BinaryTrees.BinaryTree`1.RootNode">
+            <summary>
+            Root node of the tree
+            </summary>
+        </member>
+        <member name="M:BinaryTrees.BinaryTree`1.Add(`0)">
+            <summary>
+            Adds node to the tree
+            </summary>
+            <param name="data">Any type supports comparisons</param>
+        </member>
+        <member name="M:BinaryTrees.BinaryTree`1.AddNode(BinaryTrees.BinaryTreeNode{`0},BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Recursive method for adding nodes
+            </summary>
+            <param name="node">The node to add</param>
+            <param name="currentNode">Current node</param>
+        </member>
+        <member name="M:BinaryTrees.BinaryTree`1.ShowSortedData">
+            <summary>
+            Collects and sorts tree data
+            </summary>
+            <returns>Collection of sorted data</returns>
+        </member>
+        <member name="M:BinaryTrees.BinaryTree`1.BalanceTree">
+            <summary>
+            Balances the tree
+            </summary>
+        </member>
+        <member name="M:BinaryTrees.BinaryTree`1.CollectNodes(BinaryTrees.BinaryTreeNode{`0},System.Collections.Generic.List{BinaryTrees.BinaryTreeNode{`0}})">
+            <summary>
+            Collects all nodes of the tree
+            </summary>
+            <param name="currentNode">Current node</param>
+            <param name="nodes">Collection of nodes</param>
+        </member>
+        <member name="T:BinaryTrees.BinaryTreeNode`1">
+            <summary>
+            The class representing a node of the tree for storing data
+            </summary>
+            <typeparam name="T">Any type supports comparisons</typeparam>
+        </member>
+        <member name="M:BinaryTrees.BinaryTreeNode`1.#ctor">
+            <summary>
+            Creates an instance of BinaryTreeNode class
+            </summary>
+        </member>
+        <member name="M:BinaryTrees.BinaryTreeNode`1.#ctor(`0)">
+            <summary>
+            Creates an instance of BinaryTreeNode class
+            </summary>
+        </member>
+        <member name="P:BinaryTrees.BinaryTreeNode`1.Data">
+            <summary>
+            Storing data
+            </summary>
+        </member>
+        <member name="P:BinaryTrees.BinaryTreeNode`1.ParentNode">
+            <summary>
+            Parent of the node
+            </summary>
+        </member>
+        <member name="F:BinaryTrees.BinaryTreeNode`1.rightNode">
+            <summary>
+            Private field of right the node
+            </summary>
+        </member>
+        <member name="P:BinaryTrees.BinaryTreeNode`1.RightNode">
+            <summary>
+            Right child of the node
+            </summary>
+        </member>
+        <member name="F:BinaryTrees.BinaryTreeNode`1.leftNode">
+            <summary>
+            Private field of left the node
+            </summary>
+        </member>
+        <member name="P:BinaryTrees.BinaryTreeNode`1.LeftNode">
+            <summary>
+            Left child of the node
+            </summary>
+        </member>
+        <member name="M:BinaryTrees.BinaryTreeNode`1.ToString">
+            <summary>
+            Converts node to string
+            </summary>
+            <returns>String represention of the class</returns>
+        </member>
+        <member name="T:BinaryTrees.NodeBalancer`1">
+            <summary>
+            Implements a balancing algorithm
+            </summary>
+            <typeparam name="T">Any type supports comparisons</typeparam>
+        </member>
+        <member name="T:BinaryTrees.NodeBalancer`1.BalanceState">
+            <summary>
+            Current state of the node
+            </summary>
+        </member>
+        <member name="F:BinaryTrees.NodeBalancer`1.BalanceState.Normal">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="F:BinaryTrees.NodeBalancer`1.BalanceState.LeftTooBig">
+            <summary>
+            Left node too big
+            </summary>
+        </member>
+        <member name="F:BinaryTrees.NodeBalancer`1.BalanceState.RightTooBig">
+            <summary>
+            Right node too big
+            </summary>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.BalanceNode(BinaryTrees.BinaryTree{`0},BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Balances the node
+            </summary>
+            <param name="tree">Tree</param>
+            <param name="node">Node</param>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.GetCurrentState(BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Gets current state of the node
+            </summary>
+            <param name="node"></param>
+            <returns>Current state of the node</returns>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.CompareHeights(BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Compares heights of node childs
+            </summary>
+            <param name="node">Node</param>
+            <returns>Comparison result</returns>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.MaxChildHeight(BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Gets max height of child node
+            </summary>
+            <param name="node">Child node</param>
+            <returns>Max height</returns>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.LeftRotation(BinaryTrees.BinaryTree{`0},BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Rotates the node to the left
+            </summary>
+            <param name="tree">Tree</param>
+            <param name="node">Node</param>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.RightRotation(BinaryTrees.BinaryTree{`0},BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Rotates the node to the right
+            </summary>
+            <param name="tree">Tree</param>
+            <param name="node">Node</param>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.LeftRightRotation(BinaryTrees.BinaryTree{`0},BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Rotates the node to the right and then to the left
+            </summary>
+            <param name="tree">Tree</param>
+            <param name="node">Node</param>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.RightLeftRotation(BinaryTrees.BinaryTree{`0},BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Rotates the node to the left and then to the right
+            </summary>
+            <param name="tree">Tree</param>
+            <param name="node">Node</param>
+        </member>
+        <member name="M:BinaryTrees.NodeBalancer`1.ChangeRoot(BinaryTrees.BinaryTree{`0},BinaryTrees.BinaryTreeNode{`0},BinaryTrees.BinaryTreeNode{`0})">
+            <summary>
+            Changes the root of the tree
+            </summary>
+            <param name="tree">Tree</param>
+            <param name="node">Node</param>
+            <param name="newRoot">New root</param>
+        </member>
+    </members>
+</doc>
