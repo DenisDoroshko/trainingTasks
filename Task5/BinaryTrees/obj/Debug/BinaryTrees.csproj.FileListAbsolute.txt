@@ -4,3 +4,11 @@ D:\trainingTasks\Taks5\BinaryTrees\bin\Debug\BinaryTrees.pdb
 D:\trainingTasks\Taks5\BinaryTrees\obj\Debug\BinaryTrees.csproj.CoreCompileInputs.cache
 D:\trainingTasks\Taks5\BinaryTrees\obj\Debug\BinaryTrees.exe
 D:\trainingTasks\Taks5\BinaryTrees\obj\Debug\BinaryTrees.pdb
+D:\trainingTasks\Task5\BinaryTrees\bin\Debug\BinaryTrees.pdb
+D:\trainingTasks\Task5\BinaryTrees\obj\Debug\BinaryTrees.csprojAssemblyReference.cache
+D:\trainingTasks\Task5\BinaryTrees\obj\Debug\BinaryTrees.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task5\BinaryTrees\obj\Debug\BinaryTrees.pdb
+D:\trainingTasks\Task5\BinaryTrees\bin\Debug\BinaryTrees.dll.config
+D:\trainingTasks\Task5\BinaryTrees\bin\Debug\BinaryTrees.dll
+D:\trainingTasks\Task5\BinaryTrees\obj\Debug\BinaryTrees.dll
+D:\trainingTasks\Task5\BinaryTrees\bin\Debug\BinaryTrees.xml

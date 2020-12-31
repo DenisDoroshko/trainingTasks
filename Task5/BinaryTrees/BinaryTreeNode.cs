@@ -1,26 +1,57 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace BinaryTrees
 {
-    public enum NodeLocations 
-    {
-        Left,
-        Right
-    }
-
+    /// <summary>
+    /// The class representing a node of the tree for storing data
+    /// </summary>
+    /// <typeparam name="T">Any type supports comparisons</typeparam>
+    
+    [Serializable]
     public class BinaryTreeNode<T> where T : IComparable
     {
+        /// <summary>
+        /// Creates an instance of BinaryTreeNode class
+        /// </summary>
+        
+        public BinaryTreeNode()
+        {
+
+        }
+
+        /// <summary>
+        /// Creates an instance of BinaryTreeNode class
+        /// </summary>
+        
         public BinaryTreeNode(T data)
         {
             Data = data;
         }
+
+        /// <summary>
+        /// Storing data
+        /// </summary>
+        
         public T Data { get; set; }
+
+        /// <summary>
+        /// Parent of the node
+        /// </summary>
+        
+        [XmlIgnore]
         public BinaryTreeNode<T> ParentNode { get; set; }
+
+        /// <summary>
+        /// Private field of right the node
+        /// </summary>
+        
         private BinaryTreeNode<T> rightNode;
+
+        /// <summary>
+        /// Right child of the node
+        /// </summary>
+        
         public BinaryTreeNode<T> RightNode
         {
             get { return rightNode; }
@@ -33,7 +64,17 @@ namespace BinaryTrees
                 }
             }
         }
+
+        /// <summary>
+        /// Private field of left the node
+        /// </summary>
+        
         private BinaryTreeNode<T> leftNode;
+
+        /// <summary>
+        /// Left child of the node
+        /// </summary>
+        
         public BinaryTreeNode<T> LeftNode 
         { 
             get {return leftNode; }
@@ -46,16 +87,12 @@ namespace BinaryTrees
                 }
             }
         }
-        public NodeLocations? NodeLocation { get { return GetLocation(); } }
-        private NodeLocations? GetLocation()
-        {
-            NodeLocations? location = null;
-            if (ParentNode != null)
-            {
-                location = ParentNode.RightNode == this ? NodeLocations.Right : NodeLocations.Left;
-            }
-            return location;
-        }
+
+        /// <summary>
+        /// Converts node to string
+        /// </summary>
+        /// <returns>String represention of the class</returns>
+        
         public override string ToString()
         {
             return Data.ToString();
