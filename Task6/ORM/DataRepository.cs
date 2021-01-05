@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using SessionData;
+using System.Reflection;
 
 namespace ORM
 {
@@ -41,6 +42,32 @@ namespace ORM
         public List<T> Get<T>()
         {
             return access.Get<T>();
+        }
+        public void SaveAllChanges()
+        {
+            SaveChanges(Groups);
+            SaveChanges(Students);
+            SaveChanges(Sessions);
+            SaveChanges(Exams);
+            SaveChanges(Credits);
+        }
+        private void SaveChanges<T>(List<T> elements)
+        {
+            for(var i = 0; i < elements.Count; i++) 
+            {
+                FieldInfo field = typeof(T).GetField("IsSaved");
+                bool isSaved = (bool)field.GetValue(elements[i]);
+                if (isSaved == false)
+                {
+                    Update(elements[i]);
+                    field.SetValue(elements[i], true);
+                }
+                int elementId = (int)typeof(T).GetProperty("Id").GetValue(elements[i]);
+                if (elementId == 0)
+                {
+                    Insert(elements[i]);
+                }
+            }
         }
         private void SetLinks()
         {

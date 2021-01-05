@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SessionData;
 
 namespace SessionDataFactory
@@ -18,7 +15,7 @@ namespace SessionDataFactory
                 var date = DateTime.Parse((string)values[2]);
                 int sessionId = (int)values[3];
                 int mark = (int)values[4];
-                return new Exam(id, name, date, sessionId, mark);
+                return new Exam(id, name, date, sessionId, mark) { isSaved = true };
             }
             catch
             {

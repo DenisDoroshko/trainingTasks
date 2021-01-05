@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SessionData;
 
 namespace SessionDataFactory
@@ -16,7 +13,7 @@ namespace SessionDataFactory
                 int id = (int)values[0];
                 int number = (int)values[1];
                 int ownerId = (int)values[1];
-                return new Session(id,number, ownerId);
+                return new Session(id,number, ownerId) { isSaved = true };
             }
             catch
             {

@@ -7,7 +7,7 @@
     <ProjectGuid>{94222D5D-7524-4163-A25E-40CB774592A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>SessionData</RootNamespace>
-    <AssemblyName>SessionResults</AssemblyName>
+    <AssemblyName>SessionData</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

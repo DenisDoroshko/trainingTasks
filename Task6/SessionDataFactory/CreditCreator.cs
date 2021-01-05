@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SessionData;
 
 namespace SessionDataFactory
@@ -20,8 +17,7 @@ namespace SessionDataFactory
                 int mark = (int)values[4];
                 CreditationTypes creditation;
                 Enum.TryParse((string)values[5], out creditation);
-                return new Credit(id, name, date, sessionId, creditation);
-                
+                return new Credit(id, name, date, sessionId, creditation) { isSaved = true };  
             }
             catch
             {

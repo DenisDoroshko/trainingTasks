@@ -23,7 +23,8 @@ namespace SessionData
             Creditation = creditation;
         }
         private SessionControlTypes type = SessionControlTypes.Credit;
-        public override SessionControlTypes Type { get => type; set => type = value; }
-        public CreditationTypes? Creditation { get; set; }
+        public override SessionControlTypes Type { get => type; }
+        private CreditationTypes? creditation;
+        public CreditationTypes? Creditation { get => creditation; set { creditation = value; isSaved = false; } }
     }
 }

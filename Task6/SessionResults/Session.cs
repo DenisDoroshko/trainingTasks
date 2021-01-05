@@ -14,10 +14,14 @@ namespace SessionData
             Number = number;
             OwnerId = ownerId;
         }
-        public int Id { get; set; }
-        public int Number { get; set; }
-        public int OwnerId { get; set; }
+        private int id;
+        public int Id { get => id; set { id = value; isSaved = false; } }
+        private int number;
+        public int Number { get => number; set { number = value; isSaved = false; } }
+        private int ownerId;
+        public int OwnerId { get => ownerId; set { ownerId = value; isSaved = false; } }
         public List<Exam> Exams;
         public List<Credit> Credits;
+        public bool isSaved = false;
     }
 }

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SessionData;
 
 namespace SessionDataFactory
@@ -19,7 +16,7 @@ namespace SessionDataFactory
                 Enum.TryParse((string)values[2],out sex);
                 var date=DateTime.Parse((string)values[3]);
                 int groupId = (int)values[4];
-                return new Student(id, name, sex, date, groupId);
+                return new Student(id, name, sex, date, groupId) { isSaved = true };
             }
             catch
             {

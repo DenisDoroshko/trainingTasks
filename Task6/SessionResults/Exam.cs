@@ -18,6 +18,8 @@ namespace SessionData
         }
         private SessionControlTypes type = SessionControlTypes.Exam;
         public override SessionControlTypes Type { get => type;}
-        public int? Mark { get; set; }
+
+        private int? mark;
+        public int? Mark { get => mark; set { mark = value; isSaved = false; } }
     }
 }

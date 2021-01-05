@@ -1,0 +1,6 @@
+D:\trainingTasks\Task6\SessionResults\obj\Debug\SessionData.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task6\SessionResults\bin\Debug\SessionData.dll.config
+D:\trainingTasks\Task6\SessionResults\bin\Debug\SessionData.dll
+D:\trainingTasks\Task6\SessionResults\bin\Debug\SessionData.pdb
+D:\trainingTasks\Task6\SessionResults\obj\Debug\SessionData.dll
+D:\trainingTasks\Task6\SessionResults\obj\Debug\SessionData.pdb
