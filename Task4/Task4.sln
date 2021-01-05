@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkModules", "NetworkMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextTransliteration", "TextTransliteration\TextTransliteration.csproj", "{C24BC091-EFFE-4631-906E-76B1846F4161}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientHandlers", "MessageHandlers\ClientHandlers.csproj", "{B5B0A7E9-E4AC-4312-8DF5-232722A6508C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientHandlers", "ClientHandlers\ClientHandlers.csproj", "{B5B0A7E9-E4AC-4312-8DF5-232722A6508C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerHandlers", "ServerHandlers\ServerHandlers.csproj", "{B3C6BD3C-CB03-4312-801E-5F92F70A709B}"
 EndProject
