@@ -1,11 +1,10 @@
 D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionDataFactory.dll
 D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionDataFactory.pdb
-D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionResults.dll
-D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionResults.pdb
-D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionResults.dll.config
-D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionResults.exe.config
 D:\trainingTasks\Task6\SessionDataFactory\obj\Debug\SessionDataFactory.csprojAssemblyReference.cache
 D:\trainingTasks\Task6\SessionDataFactory\obj\Debug\SessionDataFactory.csproj.CoreCompileInputs.cache
 D:\trainingTasks\Task6\SessionDataFactory\obj\Debug\SessionDataFactory.csproj.CopyComplete
 D:\trainingTasks\Task6\SessionDataFactory\obj\Debug\SessionDataFactory.dll
 D:\trainingTasks\Task6\SessionDataFactory\obj\Debug\SessionDataFactory.pdb
+D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionData.dll
+D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionData.pdb
+D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionData.dll.config

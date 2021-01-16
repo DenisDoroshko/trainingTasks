@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace SessionData
 {
+    /// <summary>
+    /// Represents session data
+    /// </summary>
+    
     public interface IData
     {
-        int Id { get; set; }
+        /// <summary>
+        /// Id of a data element
+        /// </summary>
+        
+        Guid Id { get; set; }
     }
 }

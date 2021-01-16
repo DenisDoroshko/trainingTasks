@@ -4,18 +4,19 @@ using System.Collections.Generic;
 
 namespace SessionDataFactory
 {
-    class GroupCreator:BaseCreator
+    public class GroupCreator:BaseCreator
     {
         public override IData Create(List<object> values)
         {
             try
             {
-                int id = (int)values[0];
-                string groupName = (string)values[1];
-                return new Group(id, groupName) { isSaved = true };
+                Guid id = (Guid)values[0];
+                string groupName = ((string)values[1]).Trim();
+                return new Group(id, groupName);
             }
-            catch
+            catch(Exception ex)
             {
+                Console.WriteLine("Mistake "+ex.Message);
                 return null;
             }
         }

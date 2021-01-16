@@ -10,13 +10,12 @@ namespace SessionDataFactory
         {
             try
             {
-                int id = (int)values[0];
-                string name = (string)values[1];
-                Sexes sex;
-                Enum.TryParse((string)values[2],out sex);
-                var date=DateTime.Parse((string)values[3]);
-                int groupId = (int)values[4];
-                return new Student(id, name, sex, date, groupId) { isSaved = true };
+                Guid id = (Guid)values[0];
+                string name = ((string)values[1]).Trim();
+                Sexes sex = (Sexes)(int)values[2];
+                var date=(DateTime)values[3];
+                Guid groupId = (Guid)values[4];
+                return new Student(id, name, sex, date, groupId);
             }
             catch
             {

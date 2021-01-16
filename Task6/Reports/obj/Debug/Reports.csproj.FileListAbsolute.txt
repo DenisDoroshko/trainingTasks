@@ -1,0 +1,13 @@
+D:\trainingTasks\Task6\Reports\bin\Debug\Reports.pdb
+D:\trainingTasks\Task6\Reports\bin\Debug\SessionData.dll
+D:\trainingTasks\Task6\Reports\bin\Debug\SessionData.pdb
+D:\trainingTasks\Task6\Reports\bin\Debug\SessionData.dll.config
+D:\trainingTasks\Task6\Reports\obj\Debug\Reports.csprojAssemblyReference.cache
+D:\trainingTasks\Task6\Reports\obj\Debug\Reports.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task6\Reports\obj\Debug\Reports.csproj.CopyComplete
+D:\trainingTasks\Task6\Reports\obj\Debug\Reports.pdb
+D:\trainingTasks\Task6\Reports\bin\Debug\Sorters.dll
+D:\trainingTasks\Task6\Reports\bin\Debug\Sorters.pdb
+D:\trainingTasks\Task6\Reports\bin\Debug\Reports.dll.config
+D:\trainingTasks\Task6\Reports\bin\Debug\Reports.dll
+D:\trainingTasks\Task6\Reports\obj\Debug\Reports.dll

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AccessDB.cs" />
     <Compile Include="ConectionSingleton.cs" />
+    <Compile Include="DataBaseMaker.cs" />
     <Compile Include="DataRepository.cs" />
     <Compile Include="IDAO.cs" />
     <Compile Include="Program.cs" />
@@ -57,6 +58,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{5cf3967b-c64e-48ce-9229-84b86c55fc85}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SessionDataFactory\SessionDataFactory.csproj">
       <Project>{0df8f143-ec35-4eaa-8487-e8784752dc61}</Project>
       <Name>SessionDataFactory</Name>
@@ -64,6 +69,10 @@
     <ProjectReference Include="..\SessionResults\SessionData.csproj">
       <Project>{94222d5d-7524-4163-a25e-40cb774592a8}</Project>
       <Name>SessionData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sorters\Sorters.csproj">
+      <Project>{ae9aaa66-7870-4321-b25a-db9c67bf638e}</Project>
+      <Name>Sorters</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

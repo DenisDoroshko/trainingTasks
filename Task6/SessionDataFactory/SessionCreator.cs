@@ -4,16 +4,17 @@ using SessionData;
 
 namespace SessionDataFactory
 {
-    class SessionCreator:BaseCreator
+    public class SessionCreator:BaseCreator
     {
         public override IData Create(List<object> values)
         {
             try
             {
-                int id = (int)values[0];
+                Guid id = (Guid)values[0];
                 int number = (int)values[1];
-                int ownerId = (int)values[1];
-                return new Session(id,number, ownerId) { isSaved = true };
+                Owners ownerType = (Owners)(int)values[2];
+                Guid? ownerId = values[3] != DBNull.Value ? (Guid?)values[3] : (Guid?)values[4];
+                return new Session(id,number, ownerType, ownerId);
             }
             catch
             {

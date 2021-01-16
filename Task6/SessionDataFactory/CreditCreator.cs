@@ -10,14 +10,16 @@ namespace SessionDataFactory
         {
             try
             {
-                int id = (int)values[0];
-                string name = (string)values[1];
-                var date = DateTime.Parse((string)values[2]);
-                int sessionId = (int)values[3];
-                int mark = (int)values[4];
-                CreditationTypes creditation;
-                Enum.TryParse((string)values[5], out creditation);
-                return new Credit(id, name, date, sessionId, creditation) { isSaved = true };  
+                Guid id = (Guid)values[0];
+                string name = ((string)values[1]).Trim();
+                CreditationTypes? creditation;
+                if (values[2] != DBNull.Value)
+                    creditation = (CreditationTypes?)(int)values[2];
+                else
+                    creditation = null;
+                var date = (DateTime)values[3];
+                Guid sessionId = (Guid)values[4];
+                return new Credit(id, name, creditation, date, sessionId);
             }
             catch
             {

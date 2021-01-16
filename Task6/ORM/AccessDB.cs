@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Reflection;
 using SessionDataFactory;
+using SessionData;
 
 namespace ORM
 {
@@ -22,17 +23,20 @@ namespace ORM
         {
             Type typeInfo = typeof(T);
             var typeName = typeInfo.Name;
-            var properties = GetProperties(typeInfo);
+            var properties = typeInfo.GetProperties();
             var stringPropertyNames = "";
             var stringParameters = "";
-            for (var i = 0; i < properties.Count; i++)
+            for (var i = 0; i < properties.Length; i++)
             {
-                stringPropertyNames += $" {properties[i].Name}";
-                stringParameters += $" @{properties[i].Name}";
-                if (i != properties.Count - 1)
+                if (properties[i].GetValue(element) != null)
                 {
-                    stringPropertyNames += ',';
-                    stringParameters += ',';
+                    stringPropertyNames += $" {properties[i].Name}";
+                    stringParameters += $" @{properties[i].Name}";
+                    if (i != properties.Length - 1)
+                    {
+                        stringPropertyNames += ',';
+                        stringParameters += ',';
+                    }
                 }
             }
             string sqlExpression = $"INSERT INTO {typeName}s ({stringPropertyNames}) VALUES ({stringParameters})";
@@ -46,16 +50,19 @@ namespace ORM
         {
             Type typeInfo = typeof(T);
             var typeName = typeInfo.Name;
-            var properties = GetProperties(typeInfo);
+            var properties = typeInfo.GetProperties();
             var stringParameters = "";
-            for(var i = 0; i < properties.Count; i++) 
-            { 
-                stringParameters += $" {properties[i].Name}=@{properties[i].Name}";
-                if (i != properties.Count - 1)
-                    stringParameters += ',';
+            for(var i = 0; i < properties.Length; i++) 
+            {
+                if (properties[i].GetValue(element) != null)
+                {
+                    stringParameters += $" {properties[i].Name}=@{properties[i].Name}";
+                    if (i != properties.Length - 1)
+                        stringParameters += ',';
+                }
             }
             var elementId = typeInfo.GetProperty("Id").GetValue(element);
-            string sqlExpression = $"UPDATE {typeName}s SET {stringParameters} WHERE Id={elementId}";
+            string sqlExpression = $"UPDATE {typeName}s SET {stringParameters} WHERE Id='{elementId}'";
             connection.Open();
             SqlCommand command = new SqlCommand(sqlExpression, connection);
             SetParameters(command, properties, element);
@@ -67,7 +74,7 @@ namespace ORM
             Type typeInfo = typeof(T);
             var typeName = typeInfo.Name;
             var elementId = typeInfo.GetProperty("Id").GetValue(element);
-            string sqlExpression = $"DELETE  FROM {typeName}s WHERE Id={elementId}";
+            string sqlExpression = $"DELETE  FROM {typeName}s WHERE Id='{elementId}'";
             connection.Open();
             SqlCommand command = new SqlCommand(sqlExpression, connection);
             command.ExecuteNonQuery();
@@ -92,30 +99,51 @@ namespace ORM
                         values.Add(reader.GetValue(i));
                     }
                     var element = BaseCreator.CreateByName(typeName, values);
-                    elements.Add((T)element);
+                    if (element != null)
+                        elements.Add((T)element);
                 }
             }
             reader.Close();
             connection.Close();
             return elements;
         }
-        private List<PropertyInfo> GetProperties(Type typeInfo)
+
+        public T GetById<T>(Guid id)
         {
-            var properties = new List<PropertyInfo>();
-            foreach (var property in typeInfo.GetProperties())
+            Type typeInfo = typeof(T);
+            var typeName = typeInfo.Name;
+            string sqlExpression = $"SELECT * FROM {typeName}s WHERE Id='{id}'";
+            connection.Open();
+            SqlCommand command = new SqlCommand(sqlExpression, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            T element=default;
+            if (reader.HasRows)
             {
-                if (property.Name != "Id")
-                    properties.Add(property);
+                reader.Read();
+                var values = new List<object>();
+                for (var i = 0; i < reader.FieldCount; i++)
+                {
+                    values.Add(reader.GetValue(i));
+                }
+                var foundElement = BaseCreator.CreateByName(typeName, values);
+                if (foundElement != null)
+                    element = (T)foundElement;
             }
-            return properties;
+            reader.Close();
+            connection.Close();
+            return element;
         }
-        private void SetParameters<T>(SqlCommand command,List<PropertyInfo> properties,T element)
+        private void SetParameters<T>(SqlCommand command,PropertyInfo[] properties,T element)
         {
+            
             foreach (var property in properties)
             {
                 object value = property.GetValue(element);
-                SqlParameter parameter = new SqlParameter($"@{property.Name}", value);
-                command.Parameters.Add(parameter);
+                if (value != null)
+                {
+                    SqlParameter parameter = new SqlParameter($"@{property.Name}", value);
+                    command.Parameters.Add(parameter);
+                }
             }
         }
     }

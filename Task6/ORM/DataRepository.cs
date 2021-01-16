@@ -15,12 +15,7 @@ namespace ORM
         public DataRepository(string stringConnection)
         {
             access = new AccessDB(stringConnection);
-            Groups = Get<Group>();
-            Students = Get<Student>();
-            Sessions = Get<Session>();
-            Exams = Get<Exam>();
-            Credits = Get<Credit>();
-            SetLinks();
+            GetAllElements();
         }
         public List<Group> Groups { get; set; }
         public List<Student> Students { get; set; }
@@ -43,6 +38,19 @@ namespace ORM
         {
             return access.Get<T>();
         }
+        public T GetById<T>(Guid id)
+        {
+            return access.GetById<T>(id);
+        }
+        private void GetAllElements()
+        {
+            Groups = Get<Group>();
+            Students = Get<Student>();
+            Sessions = Get<Session>();
+            Exams = Get<Exam>();
+            Credits = Get<Credit>();
+            SetLinks();
+        }
         public void SaveAllChanges()
         {
             SaveChanges(Groups);
@@ -50,24 +58,32 @@ namespace ORM
             SaveChanges(Sessions);
             SaveChanges(Exams);
             SaveChanges(Credits);
+            GetAllElements();
         }
         private void SaveChanges<T>(List<T> elements)
         {
             for(var i = 0; i < elements.Count; i++) 
             {
-                FieldInfo field = typeof(T).GetField("IsSaved");
-                bool isSaved = (bool)field.GetValue(elements[i]);
-                if (isSaved == false)
+                FieldInfo field = elements[i].GetType().GetField("IsChanged");
+                bool isChanged= (bool)field.GetValue(elements[i]);
+                if (isChanged == true)
                 {
                     Update(elements[i]);
-                    field.SetValue(elements[i], true);
-                }
-                int elementId = (int)typeof(T).GetProperty("Id").GetValue(elements[i]);
-                if (elementId == 0)
-                {
-                    Insert(elements[i]);
+                    field.SetValue(elements[i], false);
                 }
             }
+        }
+        public void SetSession(Group group,int sessionNumber)
+        {
+                var newSessions = group.SetSession(sessionNumber);
+                foreach(var session in newSessions)
+                {
+                    Insert(session);
+                    foreach (var exam in session.Exams)
+                        Insert(exam);
+                    foreach (var credit in session.Credits)
+                        Insert(credit);
+                }
         }
         private void SetLinks()
         {
@@ -78,10 +94,16 @@ namespace ORM
             }
             foreach (var session in Sessions)
             {
-                var group = FindById(Groups, session.OwnerId);
-                var student = FindById(Students, session.OwnerId);
-                group?.Sessions.Add(session);
-                student?.Sessions.Add(session);
+                if (session.GroupId != null)
+                {
+                    var group = FindById(Groups, (Guid)session.GroupId);
+                    group?.Sessions.Add(session);
+                }
+                else
+                {
+                    var student = FindById(Students, (Guid)session.StudentId);
+                    student?.Sessions.Add(session);
+                }
             }
             foreach (var exam in Exams)
             {
@@ -94,13 +116,13 @@ namespace ORM
                 session?.Credits.Add(credit);
             }
         }
-        private T FindById<T>(List<T> elements,int givenId)
+        private T FindById<T>(List<T> elements,Guid givenId)
         {
             T foundElement = default;
             bool isFound = false;
             for(var i = 0; i < elements.Count&&isFound!=true; i++)
             {
-                int elementId = (int)typeof(T).GetProperty("Id").GetValue(elements[i]);
+                Guid elementId = (Guid)typeof(T).GetProperty("Id").GetValue(elements[i]);
                 if (elementId == givenId)
                 {
                     isFound = true;
