@@ -10,14 +10,34 @@ using SessionData;
 
 namespace ORM
 {
+    /// <summary>
+    /// Representts a class for a working with database
+    /// </summary>
+    
     public class AccessDB : IDAO
     {
+        /// <summary>
+        /// Connection with database
+        /// </summary>
+        
         protected SqlConnection connection;
+
+        /// <summary>
+        /// Creates an instance for working with database
+        /// </summary>
+        /// <param name="connectionString">Connection string</param>
+        
         public AccessDB(string connectionString)
         {
             ConectionSingleton.GetInstance(connectionString);
             connection = ConectionSingleton.SqlConnection;
         }
+
+        /// <summary>
+        /// Inserts element to the database
+        /// </summary>
+        /// <typeparam name="T">Type in database table</typeparam>
+        /// <param name="element">Element</param>
 
         public void Insert<T>(T element)
         {
@@ -46,6 +66,13 @@ namespace ORM
             command.ExecuteNonQuery();
             connection.Close();
         }
+
+        /// <summary>
+        /// Updates data about specified element
+        /// </summary>
+        /// <typeparam name="T">Type in database table</typeparam>
+        /// <param name="element">Specified element</param>
+
         public void Update<T>(T element)
         {
             Type typeInfo = typeof(T);
@@ -69,6 +96,13 @@ namespace ORM
             command.ExecuteNonQuery();
             connection.Close();
         }
+
+        /// <summary>
+        /// Deletes specified element from database table
+        /// </summary>
+        /// <typeparam name="T">Type in database table</typeparam>
+        /// <param name="element">Specififed element</param>
+
         public void Delete<T>(T element)
         {
             Type typeInfo = typeof(T);
@@ -80,6 +114,13 @@ namespace ORM
             command.ExecuteNonQuery();
             connection.Close();
         }
+
+        /// <summary>
+        /// Gets all elements in database table by type
+        /// </summary>
+        /// <typeparam name="T">Type in database table</typeparam>
+        /// <returns>List of objects</returns>
+
         public List<T> Get<T>()
         {
             Type typeInfo = typeof(T);
@@ -98,7 +139,7 @@ namespace ORM
                     {
                         values.Add(reader.GetValue(i));
                     }
-                    var element = BaseCreator.CreateByName(typeName, values);
+                    var element = CreatorByName.CreateByName(typeInfo, values);
                     if (element != null)
                         elements.Add((T)element);
                 }
@@ -108,31 +149,6 @@ namespace ORM
             return elements;
         }
 
-        public T GetById<T>(Guid id)
-        {
-            Type typeInfo = typeof(T);
-            var typeName = typeInfo.Name;
-            string sqlExpression = $"SELECT * FROM {typeName}s WHERE Id='{id}'";
-            connection.Open();
-            SqlCommand command = new SqlCommand(sqlExpression, connection);
-            SqlDataReader reader = command.ExecuteReader();
-            T element=default;
-            if (reader.HasRows)
-            {
-                reader.Read();
-                var values = new List<object>();
-                for (var i = 0; i < reader.FieldCount; i++)
-                {
-                    values.Add(reader.GetValue(i));
-                }
-                var foundElement = BaseCreator.CreateByName(typeName, values);
-                if (foundElement != null)
-                    element = (T)foundElement;
-            }
-            reader.Close();
-            connection.Close();
-            return element;
-        }
         private void SetParameters<T>(SqlCommand command,PropertyInfo[] properties,T element)
         {
             

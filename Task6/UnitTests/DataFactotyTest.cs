@@ -19,7 +19,7 @@ namespace UnitTests
             Exam expected = new Exam(Guid.Parse(value1), value2, value3, DateTime.Parse(value4), Guid.Parse(value5));
             List<object> values = new List<object>() { Guid.Parse(value1), value2, value3, DateTime.Parse(value4), Guid.Parse(value5) };
             //Act
-            var result = BaseCreator.CreateByName("Exam",values);
+            var result = CreatorByName.CreateByName(typeof(Exam), values);
             //Assert
             Assert.AreEqual(expected, result);
         }

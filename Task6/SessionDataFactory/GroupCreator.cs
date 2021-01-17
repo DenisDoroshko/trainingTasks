@@ -4,8 +4,18 @@ using System.Collections.Generic;
 
 namespace SessionDataFactory
 {
+    /// <summary>
+    /// Representts a class for a creating groups
+    /// </summary>
+
     public class GroupCreator:BaseCreator
     {
+        /// <summary>
+        /// Creates a credit
+        /// </summary>
+        /// <param name="values">Specified values</param>
+        /// <returns>The instance of the Group class</returns>
+        
         public override IData Create(List<object> values)
         {
             try

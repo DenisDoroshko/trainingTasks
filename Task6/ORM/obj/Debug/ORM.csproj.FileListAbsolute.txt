@@ -1,10 +1,7 @@
-D:\trainingTasks\Task6\ORM\bin\Debug\ORM.exe.config
-D:\trainingTasks\Task6\ORM\bin\Debug\ORM.exe
 D:\trainingTasks\Task6\ORM\bin\Debug\ORM.pdb
 D:\trainingTasks\Task6\ORM\obj\Debug\ORM.csprojAssemblyReference.cache
 D:\trainingTasks\Task6\ORM\obj\Debug\ORM.csproj.CoreCompileInputs.cache
 D:\trainingTasks\Task6\ORM\obj\Debug\ORM.csproj.CopyComplete
-D:\trainingTasks\Task6\ORM\obj\Debug\ORM.exe
 D:\trainingTasks\Task6\ORM\obj\Debug\ORM.pdb
 D:\trainingTasks\Task6\ORM\bin\Debug\SessionDataFactory.dll
 D:\trainingTasks\Task6\ORM\bin\Debug\SessionDataFactory.pdb
@@ -16,3 +13,11 @@ D:\trainingTasks\Task6\ORM\bin\Debug\Sorters.dll
 D:\trainingTasks\Task6\ORM\bin\Debug\Sorters.pdb
 D:\trainingTasks\Task6\ORM\bin\Debug\Reports.dll
 D:\trainingTasks\Task6\ORM\bin\Debug\Reports.dll.config
+D:\trainingTasks\Task6\ORM\bin\Debug\Reports.xml
+D:\trainingTasks\Task6\ORM\bin\Debug\SessionData.xml
+D:\trainingTasks\Task6\ORM\bin\Debug\Sorters.xml
+D:\trainingTasks\Task6\ORM\bin\Debug\ORM.dll.config
+D:\trainingTasks\Task6\ORM\bin\Debug\ORM.xml
+D:\trainingTasks\Task6\ORM\bin\Debug\ORM.dll
+D:\trainingTasks\Task6\ORM\bin\Debug\SessionDataFactory.xml
+D:\trainingTasks\Task6\ORM\obj\Debug\ORM.dll

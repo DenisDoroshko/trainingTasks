@@ -7,8 +7,16 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Reports
 {
+    /// <summary>
+    /// Representts a class for a making pivot table in the workbook
+    /// </summary>
     public static class PivotTableMaker
     {
+        /// <summary>
+        /// Makes a pivot table in the workbook
+        /// </summary>
+        /// <param name="path">Workbook path</param>
+        
         public static void MakePivotTable(string path)
         {
             Excel.Application excel = new Excel.Application();
@@ -38,6 +46,13 @@ namespace Reports
             workSheet.Columns.EntireColumn.AutoFit();
             workBook.SaveAs(path);
         }
+
+        /// <summary>
+        /// Gets exams number
+        /// </summary>
+        /// <param name="sheet">Current sheet</param>
+        /// <returns>Number of exams</returns>
+        
         private static int GetExamsNumber(Excel.Worksheet sheet)
         {
             var i = 2;
@@ -49,6 +64,13 @@ namespace Reports
             }
             return examsNumber;
         }
+
+        /// <summary>
+        /// Gets students number
+        /// </summary>
+        /// <param name="sheet">Current sheet</param>
+        /// <returns>Students number</returns>
+        
         private static int GetStudentsNumber(Excel.Worksheet sheet)
         {
             var i = 2;
@@ -60,6 +82,15 @@ namespace Reports
             }
             return studentsNumber;
         }
+
+        /// <summary>
+        /// Gets address of cells
+        /// </summary>
+        /// <param name="sheet">Current sheet</param>
+        /// <param name="examsNumber">Exams number</param>
+        /// <param name="studentsNumber">Students number</param>
+        /// <returns>Address</returns>
+        
         private static string GetAddress(Excel.Worksheet sheet,int examsNumber,int studentsNumber)
         {
             Excel.Range c1 = sheet.Cells[2, 2];

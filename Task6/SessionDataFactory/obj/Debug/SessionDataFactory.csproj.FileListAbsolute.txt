@@ -8,3 +8,5 @@ D:\trainingTasks\Task6\SessionDataFactory\obj\Debug\SessionDataFactory.pdb
 D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionData.dll
 D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionData.pdb
 D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionData.dll.config
+D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionData.xml
+D:\trainingTasks\Task6\SessionDataFactory\bin\Debug\SessionDataFactory.xml

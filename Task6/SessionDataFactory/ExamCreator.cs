@@ -4,8 +4,18 @@ using SessionData;
 
 namespace SessionDataFactory
 {
+    /// <summary>
+    /// Representts a class for a creating exams
+    /// </summary>
+
     public class ExamCreator:BaseCreator
     {
+        /// <summary>
+        /// Creates a credit
+        /// </summary>
+        /// <param name="values">Specified values</param>
+        /// <returns>The instance of the Exam class</returns>
+
         public override IData Create(List<object> values)
         {
             try

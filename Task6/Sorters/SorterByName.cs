@@ -7,11 +7,17 @@ using SessionData;
 
 namespace Sorters
 {
+    /// <summary>
+    /// Representts a class for a sorting students by name
+    /// </summary>
+    
     public class SorterByName:ISorter
     {
-        public SorterByName()
-        {
-        }
+        /// <summary>
+        /// Sorts students by name
+        /// </summary>
+        /// <param name="group">Selected group</param>
+
         public void Sort(Group group)
         {
             group.Students =group.Students.OrderBy(i => i.FullName).ToList();

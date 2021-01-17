@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Reports</name>
+    </assembly>
+    <members>
+        <member name="T:Reports.DataSaver">
+            <summary>
+            Representts a class for a saving data
+            </summary>
+        </member>
+        <member name="M:Reports.DataSaver.SaveAsXlsx(System.String,System.Collections.Generic.List{SessionData.Group},System.Int32,Sorters.SortTypes)">
+            <summary>
+            Saves data as a xlsx file
+            </summary>
+            <param name="path">File path</param>
+            <param name="groups">Groups</param>
+            <param name="sessionNumber">Number of saved data</param>
+            <param name="sortType">Sort type</param>
+        </member>
+        <member name="M:Reports.DataSaver.FillColumns(Microsoft.Office.Interop.Excel.Worksheet,SessionData.Session)">
+            <summary>
+            Fills table columns
+            </summary>
+            <param name="workSheet">Worksheet</param>
+            <param name="session">Session</param>
+        </member>
+        <member name="M:Reports.DataSaver.FillSheet(Microsoft.Office.Interop.Excel.Worksheet,System.Collections.Generic.List{SessionData.Student},System.Int32)">
+            <summary>
+            Fills sheet cells
+            </summary>
+            <param name="workSheet">Worksheet</param>
+            <param name="students">Students</param>
+            <param name="sessionNumber">Number of saved session</param>
+        </member>
+        <member name="T:Reports.PivotTableMaker">
+            <summary>
+            Representts a class for a making pivot table in the workbook
+            </summary>
+        </member>
+        <member name="M:Reports.PivotTableMaker.MakePivotTable(System.String)">
+            <summary>
+            Makes a pivot table in the workbook
+            </summary>
+            <param name="path">Workbook path</param>
+        </member>
+        <member name="M:Reports.PivotTableMaker.GetExamsNumber(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Gets exams number
+            </summary>
+            <param name="sheet">Current sheet</param>
+            <returns>Number of exams</returns>
+        </member>
+        <member name="M:Reports.PivotTableMaker.GetStudentsNumber(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Gets students number
+            </summary>
+            <param name="sheet">Current sheet</param>
+            <returns>Students number</returns>
+        </member>
+        <member name="M:Reports.PivotTableMaker.GetAddress(Microsoft.Office.Interop.Excel.Worksheet,System.Int32,System.Int32)">
+            <summary>
+            Gets address of cells
+            </summary>
+            <param name="sheet">Current sheet</param>
+            <param name="examsNumber">Exams number</param>
+            <param name="studentsNumber">Students number</param>
+            <returns>Address</returns>
+        </member>
+        <member name="T:Reports.StudentsListMaker">
+            <summary>
+            Representts a class for a making students expelled list
+            </summary>
+        </member>
+        <member name="M:Reports.StudentsListMaker.MakeExpelledList(System.Collections.Generic.List{SessionData.Group})">
+            <summary>
+            Makes students expelled list
+            </summary>
+            <param name="groups">Group</param>
+            <returns>Expelled list</returns>
+        </member>
+        <member name="M:Reports.StudentsListMaker.CheckSession(SessionData.Session)">
+            <summary>
+            Checks student session
+            </summary>
+            <param name="session">Session</param>
+            <returns>True if the specified session is passed; otherwise, false</returns>
+        </member>
+    </members>
+</doc>

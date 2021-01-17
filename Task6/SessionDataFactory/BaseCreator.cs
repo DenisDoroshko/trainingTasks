@@ -7,42 +7,19 @@ using SessionData;
 
 namespace SessionDataFactory
 {
-    public enum SessionDataTypes
-    {
-        None,
-        Group,
-        Student,
-        Session,
-        Exam,
-        Credit
-    }
+
+    /// <summary>
+    /// Representts a base class for a creating session data objects
+    /// </summary>
+
     public abstract class BaseCreator
     {
+        /// <summary>
+        /// Creates a session data object
+        /// </summary>
+        /// <param name="values"></param>
+        /// <returns>Session data object</returns>
+
         public abstract IData Create(List<object> values);
-        public static IData CreateByName(string className,List<object> values)
-        {
-            SessionDataTypes type;
-            Enum.TryParse(className, out type);
-            IData element = null; ;
-            switch (type)
-            {
-                case SessionDataTypes.Group:
-                    element = (new GroupCreator()).Create(values);
-                    break;
-                case SessionDataTypes.Student:
-                    element = (new StudentCreator()).Create(values);
-                    break;
-                case SessionDataTypes.Session:
-                    element = (new SessionCreator()).Create(values);
-                    break;
-                case SessionDataTypes.Exam:
-                    element = (new ExamCreator()).Create(values);
-                    break;
-                case SessionDataTypes.Credit:
-                    element = (new CreditCreator()).Create(values);
-                    break;
-            }
-            return element;
-        }
     }
 }

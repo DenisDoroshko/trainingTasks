@@ -8,3 +8,5 @@ D:\trainingTasks\Task6\Sorters\obj\Debug\Sorters.csproj.CoreCompileInputs.cache
 D:\trainingTasks\Task6\Sorters\obj\Debug\Sorters.csproj.CopyComplete
 D:\trainingTasks\Task6\Sorters\obj\Debug\Sorters.dll
 D:\trainingTasks\Task6\Sorters\obj\Debug\Sorters.pdb
+D:\trainingTasks\Task6\Sorters\bin\Debug\Sorters.xml
+D:\trainingTasks\Task6\Sorters\bin\Debug\SessionData.xml

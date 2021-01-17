@@ -67,7 +67,6 @@ namespace SessionData
         /// Redefining the GetHashCode method that calculates the hash code of the current object
         /// </summary>
         /// <returns>Hash code of the current object</returns>
-
         public override int GetHashCode()
         {
             return Id.GetHashCode();

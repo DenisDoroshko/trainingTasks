@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SessionDataFactory</name>
+    </assembly>
+    <members>
+        <member name="T:SessionDataFactory.BaseCreator">
+            <summary>
+            Representts a base class for a creating session data objects
+            </summary>
+        </member>
+        <member name="M:SessionDataFactory.BaseCreator.Create(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Creates a session data object
+            </summary>
+            <param name="values"></param>
+            <returns>Session data object</returns>
+        </member>
+        <member name="T:SessionDataFactory.SessionDataTypes">
+            <summary>
+            Session data types
+            </summary>
+        </member>
+        <member name="F:SessionDataFactory.SessionDataTypes.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:SessionDataFactory.SessionDataTypes.Group">
+            <summary>
+            Group
+            </summary>
+        </member>
+        <member name="F:SessionDataFactory.SessionDataTypes.Student">
+            <summary>
+            Student
+            </summary>
+        </member>
+        <member name="F:SessionDataFactory.SessionDataTypes.Session">
+            <summary>
+            Session
+            </summary>
+        </member>
+        <member name="F:SessionDataFactory.SessionDataTypes.Exam">
+            <summary>
+            Exam
+            </summary>
+        </member>
+        <member name="F:SessionDataFactory.SessionDataTypes.Credit">
+            <summary>
+            Credit
+            </summary>
+        </member>
+        <member name="T:SessionDataFactory.CreatorByName">
+            <summary>
+            Representts a class for a creating session data objects by specified type
+            </summary>
+        </member>
+        <member name="M:SessionDataFactory.CreatorByName.CreateByName(System.Type,System.Collections.Generic.List{System.Object})">
+            <summary>
+            Creates session data object by specified type
+            </summary>
+            <param name="selectedType">Name of selected type</param>
+            <param name="values">Values for creating</param>
+            <returns>Session data object</returns>
+        </member>
+        <member name="T:SessionDataFactory.CreditCreator">
+            <summary>
+            Representts a class for a creating credits
+            </summary>
+        </member>
+        <member name="M:SessionDataFactory.CreditCreator.Create(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Creates a credit
+            </summary>
+            <param name="values">Specified values</param>
+            <returns>The instance of the Credit class</returns>
+        </member>
+        <member name="T:SessionDataFactory.ExamCreator">
+            <summary>
+            Representts a class for a creating exams
+            </summary>
+        </member>
+        <member name="M:SessionDataFactory.ExamCreator.Create(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Creates a credit
+            </summary>
+            <param name="values">Specified values</param>
+            <returns>The instance of the Exam class</returns>
+        </member>
+        <member name="T:SessionDataFactory.GroupCreator">
+            <summary>
+            Representts a class for a creating groups
+            </summary>
+        </member>
+        <member name="M:SessionDataFactory.GroupCreator.Create(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Creates a credit
+            </summary>
+            <param name="values">Specified values</param>
+            <returns>The instance of the Group class</returns>
+        </member>
+        <member name="T:SessionDataFactory.SessionCreator">
+            <summary>
+            Representts a class for a creating session
+            </summary>
+        </member>
+        <member name="M:SessionDataFactory.SessionCreator.Create(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Creates a credit
+            </summary>
+            <param name="values">Specified values</param>
+            <returns>The instance of the Session class</returns>
+        </member>
+        <member name="T:SessionDataFactory.StudentCreator">
+            <summary>
+            Representts a class for a creating session
+            </summary>
+        </member>
+        <member name="M:SessionDataFactory.StudentCreator.Create(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Creates a credit
+            </summary>
+            <param name="values">Specified values</param>
+            <returns>The instance of the Student class</returns>
+        </member>
+    </members>
+</doc>

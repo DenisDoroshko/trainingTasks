@@ -66,7 +66,8 @@ namespace UnitTests
             MakeDB();
             DataRepository repository = new DataRepository($"data source ={sqlServerPath}; Initial Catalog =dbTask6; Integrated Security = True");
             repository.Insert(initialGroup);
-            var resultGroup = repository.GetById<SessionData.Group>(initialGroup.Id);
+            repository.SaveAllChanges();
+            var resultGroup = repository.FindById<SessionData.Group>(initialGroup.Id);
             DeleteDB();
             //Assert
             Assert.AreEqual(initialGroup, resultGroup);
@@ -88,7 +89,8 @@ namespace UnitTests
             repository.Insert(group);
             repository.Insert(initialStudent);
             repository.Delete(initialStudent);
-            var resultStudent = repository.GetById<Student>(initialStudent.Id);
+            repository.SaveAllChanges();
+            var resultStudent = repository.FindById<Student>(initialStudent.Id);
             DeleteDB();
             //Assert
             Assert.AreEqual(expected, resultStudent);
@@ -110,7 +112,8 @@ namespace UnitTests
             repository.Insert(initialStudent);
             initialStudent.FullName = "New Name";
             repository.Update(initialStudent);
-            var resultStudent = repository.GetById<Student>(initialStudent.Id);
+            repository.SaveAllChanges();
+            var resultStudent = repository.FindById<Student>(initialStudent.Id);
             DeleteDB();
             //Assert
             Assert.AreEqual(initialStudent, resultStudent);
@@ -137,6 +140,37 @@ namespace UnitTests
             if (repository.Groups.SequenceEqual(resultGroups))
                 result = true;
             DeleteDB();
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [DataTestMethod]
+        [DataRow("OOP")]
+        [DataRow("Math")]
+        [DataRow("History")]
+        public void SetSession(string  examName)
+        {
+            //Arange
+            string expected = examName;
+            var group = new SessionData.Group(Guid.NewGuid(), "ITP-33");
+            var student = new Student(Guid.Parse("165fec7b-be0a-467f-b68d-9e17ab86c846"), "Ivanov Ivan", Sexes.Male, new DateTime(2020, 12, 12), group.Id);
+            var session = new Session(Guid.NewGuid(), 1, Owners.Group, group.Id);
+            var exam = new Exam(Guid.NewGuid(), examName, null, new DateTime(2020, 12, 12), session.Id);
+            session.Exams.Add(exam);
+            //Act
+            MakeDB();
+            DataRepository repository = new DataRepository($"data source ={sqlServerPath}; Initial Catalog =dbTask6; Integrated Security = True");
+            repository.Insert(group);
+            repository.SaveAllChanges();
+            repository.Insert(student);
+            repository.Insert(session);
+            repository.SaveAllChanges();
+            repository.Insert(exam);
+            repository.SaveAllChanges();
+            repository.SetSession(repository.FindById<SessionData.Group>(group.Id),1);
+            repository.SaveAllChanges();
+            DeleteDB();
+            var result = repository.FindById<Student>(student.Id).Sessions[0].Exams[0].Name;
             //Assert
             Assert.AreEqual(expected, result);
         }

@@ -9,8 +9,20 @@ using Sorters;
 
 namespace Reports
 {
+    /// <summary>
+    /// Representts a class for a saving data
+    /// </summary>
+    
     public class DataSaver
     {
+        /// <summary>
+        /// Saves data as a xlsx file
+        /// </summary>
+        /// <param name="path">File path</param>
+        /// <param name="groups">Groups</param>
+        /// <param name="sessionNumber">Number of saved data</param>
+        /// <param name="sortType">Sort type</param>
+        
         public static void SaveAsXlsx(string path,List<Group> groups,int sessionNumber,SortTypes sortType)
         {
             Excel.Application excelApp = new Excel.Application();
@@ -34,6 +46,13 @@ namespace Reports
             workBook.SaveAs(path, Type.Missing,Type.Missing, Type.Missing, Type.Missing, Type.Missing, 
             Excel.XlSaveAsAccessMode.xlShared,Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
         }
+
+        /// <summary>
+        /// Fills table columns
+        /// </summary>
+        /// <param name="workSheet">Worksheet</param>
+        /// <param name="session">Session</param>
+        
         private static void FillColumns(Excel.Worksheet workSheet, Session session)
         {
             workSheet.Cells[1, 1] = "Student name";
@@ -49,6 +68,14 @@ namespace Reports
                 i++;
             }
         }
+
+        /// <summary>
+        /// Fills sheet cells
+        /// </summary>
+        /// <param name="workSheet">Worksheet</param>
+        /// <param name="students">Students</param>
+        /// <param name="sessionNumber">Number of saved session</param>
+        
         private static void FillSheet(Excel.Worksheet workSheet,List<Student> students,int sessionNumber)
         {   
             int row = 2;

@@ -7,8 +7,17 @@ using SessionData;
 
 namespace Sorters
 {
+    /// <summary>
+    /// The interface for sorting
+    /// </summary>
+    
     interface ISorter
     {
+        /// <summary>
+        /// Sorts data 
+        /// </summary>
+        /// <param name="group">Selected group</param>
+        
         void Sort(Group group);
     }
 }

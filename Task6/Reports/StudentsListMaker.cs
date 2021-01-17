@@ -7,8 +7,18 @@ using SessionData;
 
 namespace Reports
 {
+    /// <summary>
+    /// Representts a class for a making students expelled list
+    /// </summary>
+    
     public static class StudentsListMaker
     {
+        /// <summary>
+        /// Makes students expelled list
+        /// </summary>
+        /// <param name="groups">Group</param>
+        /// <returns>Expelled list</returns>
+        
         public static List<Student> MakeExpelledList(List<Group> groups)
         {
             var expelledList = new List<Student>();
@@ -28,6 +38,13 @@ namespace Reports
             }
             return expelledList;
         }
+
+        /// <summary>
+        /// Checks student session
+        /// </summary>
+        /// <param name="session">Session</param>
+        /// <returns>True if the specified session is passed; otherwise, false</returns>
+        
         private static bool CheckSession(Session session)
         {
             bool isPassed = true;
