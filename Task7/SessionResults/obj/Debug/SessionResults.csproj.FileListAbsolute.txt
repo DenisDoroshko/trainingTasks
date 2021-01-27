@@ -1,0 +1,7 @@
+D:\trainingTasks\Task6\SessionResults\bin\Debug\SessionResults.exe.config
+D:\trainingTasks\Task6\SessionResults\bin\Debug\SessionResults.exe
+D:\trainingTasks\Task6\SessionResults\bin\Debug\SessionResults.pdb
+D:\trainingTasks\Task6\SessionResults\obj\Debug\SessionResults.csprojAssemblyReference.cache
+D:\trainingTasks\Task6\SessionResults\obj\Debug\SessionResults.csproj.CoreCompileInputs.cache
+D:\trainingTasks\Task6\SessionResults\obj\Debug\SessionResults.exe
+D:\trainingTasks\Task6\SessionResults\obj\Debug\SessionResults.pdb

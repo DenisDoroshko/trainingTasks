@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SessionData</name>
+    </assembly>
+    <members>
+        <member name="T:SessionData.CreditationTypes">
+            <summary>
+            Creditation types
+            </summary>
+        </member>
+        <member name="F:SessionData.CreditationTypes.NotCredited">
+            <summary>
+            Not credited
+            </summary>
+        </member>
+        <member name="F:SessionData.CreditationTypes.Credited">
+            <summary>
+            Credited
+            </summary>
+        </member>
+        <member name="T:SessionData.Credit">
+            <summary>
+            The class representing a credit
+            </summary>
+        </member>
+        <member name="M:SessionData.Credit.#ctor">
+            <summary>
+            Creates an instance of the Credit class
+            </summary>
+        </member>
+        <member name="M:SessionData.Credit.#ctor(System.Guid,System.String,System.Nullable{SessionData.CreditationTypes},System.DateTime,System.String,System.Guid)">
+            <summary>
+            Creates an instance of the Credit class
+            </summary>
+            <param name="id">Credit id</param>
+            <param name="name">Credit name</param>
+            <param name="creditation">Creditation</param>
+            <param name="date">Date of the credit</param>
+            <param name="examiner">Examiner name</param>
+            <param name="sessionId">Session id</param>
+        </member>
+        <member name="P:SessionData.Credit.Id">
+            <summary>
+            Group id
+            </summary>
+        </member>
+        <member name="P:SessionData.Credit.Name">
+            <summary>
+            Session control name
+            </summary>
+        </member>
+        <member name="P:SessionData.Credit.Date">
+            <summary>
+            Session contol date
+            </summary>
+        </member>
+        <member name="P:SessionData.Credit.SessionId">
+            <summary>
+            Session id
+            </summary>
+        </member>
+        <member name="P:SessionData.Credit.Examiner">
+            <summary>
+            Examiner name
+            </summary>
+        </member>
+        <member name="F:SessionData.Credit.IsChanged">
+            <summary>
+            Is the group changed
+            </summary>
+        </member>
+        <member name="P:SessionData.Credit.Creditation">
+            <summary>
+            Credittation
+            </summary>
+        </member>
+        <member name="M:SessionData.Credit.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:SessionData.Credit.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+        <member name="T:SessionData.Exam">
+            <summary>
+            The class representing an exam
+            </summary>
+        </member>
+        <member name="M:SessionData.Exam.#ctor">
+            <summary>
+            Creates an instance of the Exam class
+            </summary>
+        </member>
+        <member name="M:SessionData.Exam.#ctor(System.Guid,System.String,System.Nullable{System.Int32},System.DateTime,System.String,System.Guid)">
+            <summary>
+            Creates an instance of the Exam class
+            </summary>
+            <param name="id">Exam id</param>
+            <param name="name">Exam name</param>
+            <param name="mark">Exam mark</param>
+            <param name="date">Exam date</param>
+            <param name="examiner">Examiner name</param>
+            <param name="sessionId">Session id</param>
+        </member>
+        <member name="P:SessionData.Exam.Id">
+            <summary>
+            Group id
+            </summary>
+        </member>
+        <member name="P:SessionData.Exam.Name">
+            <summary>
+            Session control name
+            </summary>
+        </member>
+        <member name="P:SessionData.Exam.Date">
+            <summary>
+            Session contol date
+            </summary>
+        </member>
+        <member name="P:SessionData.Exam.SessionId">
+            <summary>
+            Session id
+            </summary>
+        </member>
+        <member name="P:SessionData.Exam.Examiner">
+            <summary>
+            Examiner name
+            </summary>
+        </member>
+        <member name="P:SessionData.Exam.Mark">
+            <summary>
+            Exam mark
+            </summary>
+        </member>
+        <member name="M:SessionData.Exam.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:SessionData.Exam.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+        <member name="T:SessionData.IData">
+            <summary>
+            Represents session data
+            </summary>
+        </member>
+        <member name="P:SessionData.IData.Id">
+            <summary>
+            Id of a data element
+            </summary>
+        </member>
+        <member name="T:SessionData.Group">
+            <summary>
+            The class representing a group
+            </summary>
+        </member>
+        <member name="M:SessionData.Group.#ctor">
+            <summary>
+            Creates an instance of the Group class
+            </summary>
+        </member>
+        <member name="M:SessionData.Group.#ctor(System.Guid,System.String,System.String)">
+            <summary>
+            Creates an instance of the Group class
+            </summary>
+            <param name="id">Group id</param>
+            <param name="groupName">Group name</param>
+            /// <param name="specialty">Specialty</param>
+        </member>
+        <member name="P:SessionData.Group.Id">
+            <summary>
+            Group id
+            </summary>
+        </member>
+        <member name="P:SessionData.Group.GroupName">
+            <summary>
+            Group name
+            </summary>
+        </member>
+        <member name="P:SessionData.Group.Specialty">
+            <summary>
+            Specialty
+            </summary>
+        </member>
+        <member name="F:SessionData.Group.Students">
+            <summary>
+            Group students
+            </summary>
+        </member>
+        <member name="F:SessionData.Group.Sessions">
+            <summary>
+            Group sessions
+            </summary>
+        </member>
+        <member name="M:SessionData.Group.SetSession(System.Int32)">
+            <summary>
+            Add sessions to students
+            </summary>
+            <param name="sessionNumber">Number of added session</param>
+            <returns>Added sessions</returns>
+        </member>
+        <member name="M:SessionData.Group.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:SessionData.Group.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+        <member name="T:SessionData.Owners">
+            <summary>
+            Session owners
+            </summary>
+        </member>
+        <member name="F:SessionData.Owners.Group">
+            <summary>
+            Group
+            </summary>
+        </member>
+        <member name="F:SessionData.Owners.Student">
+            <summary>
+            Student
+            </summary>
+        </member>
+        <member name="T:SessionData.Session">
+            <summary>
+            The class representing a session
+            </summary>
+        </member>
+        <member name="M:SessionData.Session.#ctor">
+            <summary>
+             Creates an instance of the Session class
+            </summary>
+        </member>
+        <member name="M:SessionData.Session.#ctor(System.Guid,System.Int32,SessionData.Owners,System.Nullable{System.Guid})">
+            <summary>
+            Creates an instance of the Session class
+            </summary>
+            <param name="id">Session id</param>
+            <param name="number">Session number</param>
+            <param name="ownerType">Owner type</param>
+            <param name="ownerId">Owner id</param>
+        </member>
+        <member name="P:SessionData.Session.Id">
+            <summary>
+            Session id
+            </summary>
+        </member>
+        <member name="P:SessionData.Session.Number">
+            <summary>
+            Session number
+            </summary>
+        </member>
+        <member name="P:SessionData.Session.StudentId">
+            <summary>
+            Studend id
+            </summary>
+        </member>
+        <member name="P:SessionData.Session.GroupId">
+            <summary>
+            Group id
+            </summary>
+        </member>
+        <member name="P:SessionData.Session.OwnerType">
+            <summary>
+            Owner type
+            </summary>
+        </member>
+        <member name="F:SessionData.Session.Exams">
+            <summary>
+            Session exams
+            </summary>
+        </member>
+        <member name="F:SessionData.Session.Credits">
+            <summary>
+            Session credits
+            </summary>
+        </member>
+        <member name="M:SessionData.Session.MakeEmptyCopy(System.Guid)">
+            <summary>
+            Make empty copy of this session
+            </summary>
+            <param name="ownerId">Owner id</param>
+            <returns>Empy copy</returns>
+        </member>
+        <member name="M:SessionData.Session.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:SessionData.Session.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+        <member name="T:SessionData.Sexes">
+            <summary>
+            Sex of the student
+            </summary>
+        </member>
+        <member name="F:SessionData.Sexes.None">
+            <summary>
+            Sex not specified
+            </summary>
+        </member>
+        <member name="F:SessionData.Sexes.Male">
+            <summary>
+            Male
+            </summary>
+        </member>
+        <member name="F:SessionData.Sexes.Female">
+            <summary>
+            Female
+            </summary>
+        </member>
+        <member name="T:SessionData.Student">
+            <summary>
+            The class representing a student
+            </summary>
+        </member>
+        <member name="M:SessionData.Student.#ctor">
+            <summary>
+            Creates an instance of the Student class
+            </summary>
+        </member>
+        <member name="M:SessionData.Student.#ctor(System.Guid,System.String,SessionData.Sexes,System.DateTime,System.Guid)">
+            <summary>
+            Creates an instance of the Student class
+            </summary>
+            <param name="id">Student id</param>
+            <param name="fullName">Student name</param>
+            <param name="sex">Student sex</param>
+            <param name="birthDate">Student birthdate</param>
+            <param name="gropuId">Group id</param>
+        </member>
+        <member name="P:SessionData.Student.Id">
+            <summary>
+            Student id
+            </summary>
+        </member>
+        <member name="P:SessionData.Student.FullName">
+            <summary>
+            Student name
+            </summary>
+        </member>
+        <member name="P:SessionData.Student.Sex">
+            <summary>
+            Student sex
+            </summary>
+        </member>
+        <member name="P:SessionData.Student.BirthDate">
+            <summary>
+            Birthdate of the student
+            </summary>
+        </member>
+        <member name="P:SessionData.Student.GroupId">
+            <summary>
+            Group id
+            </summary>
+        </member>
+        <member name="F:SessionData.Student.Sessions">
+            <summary>
+            Student sessions
+            </summary>
+        </member>
+        <member name="M:SessionData.Student.Equals(System.Object)">
+            <summary>
+            Redefining the Equals method
+            </summary>
+            <param name="obj"></param>
+            <returns>True if the specified object is equal to the current object; otherwise, false</returns>
+        </member>
+        <member name="M:SessionData.Student.GetHashCode">
+            <summary>
+            Redefining the GetHashCode method that calculates the hash code of the current object
+            </summary>
+            <returns>Hash code of the current object</returns>
+        </member>
+    </members>
+</doc>

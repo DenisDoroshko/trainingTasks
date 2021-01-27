@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sorters</name>
+    </assembly>
+    <members>
+        <member name="T:Sorters.SorterByBirthDate">
+            <summary>
+            Representts a class for a sorting students by birthdate
+            </summary>
+        </member>
+        <member name="M:Sorters.SorterByBirthDate.Sort(SessionData.Group)">
+            <summary>
+            Sorts students by birthdate
+            </summary>
+            <param name="group">Selected group</param>
+        </member>
+        <member name="T:Sorters.SorterByName">
+            <summary>
+            Representts a class for a sorting students by name
+            </summary>
+        </member>
+        <member name="M:Sorters.SorterByName.Sort(SessionData.Group)">
+            <summary>
+            Sorts students by name
+            </summary>
+            <param name="group">Selected group</param>
+        </member>
+        <member name="T:Sorters.ISorter">
+            <summary>
+            The interface for sorting
+            </summary>
+        </member>
+        <member name="M:Sorters.ISorter.Sort(SessionData.Group)">
+            <summary>
+            Sorts data 
+            </summary>
+            <param name="group">Selected group</param>
+        </member>
+        <member name="T:Sorters.SorterBySex">
+            <summary>
+            Representts a class for a sorting students by sex
+            </summary>
+        </member>
+        <member name="M:Sorters.SorterBySex.Sort(SessionData.Group)">
+            <summary>
+            Sorts students by sex
+            </summary>
+            <param name="group">Selected group</param>
+        </member>
+        <member name="T:Sorters.SortTypes">
+            <summary>
+            Sort types
+            </summary>
+        </member>
+        <member name="F:Sorters.SortTypes.None">
+            <summary>
+            No sorting needed
+            </summary>
+        </member>
+        <member name="F:Sorters.SortTypes.SortByName">
+            <summary>
+            Sort by name
+            </summary>
+        </member>
+        <member name="F:Sorters.SortTypes.SortByBirthDate">
+            <summary>
+            Sort by birthdate
+            </summary>
+        </member>
+        <member name="F:Sorters.SortTypes.SortBySex">
+            <summary>
+            Sort by sex
+            </summary>
+        </member>
+        <member name="T:Sorters.SortSelector">
+            <summary>
+            Representts a class for a sorting data by specified sort type
+            </summary>
+        </member>
+        <member name="M:Sorters.SortSelector.SortBy(Sorters.SortTypes,SessionData.Group)">
+            <summary>
+            Sorts data by specified sort type
+            </summary>
+            <param name="sortType">Specified sort type</param>
+            <param name="group">Selected group</param>
+        </member>
+    </members>
+</doc>

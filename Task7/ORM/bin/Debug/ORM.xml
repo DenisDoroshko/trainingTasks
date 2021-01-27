@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ORM</name>
+    </assembly>
+    <members>
+        <member name="T:ORM.AccessDB">
+            <summary>
+            Representts a class for a working with database
+            </summary>
+        </member>
+        <member name="F:ORM.AccessDB.dataBase">
+            <summary>
+            Data context
+            </summary>
+        </member>
+        <member name="M:ORM.AccessDB.#ctor(System.String)">
+            <summary>
+            Creates an instance for working with database
+            </summary>
+            <param name="connectionString">Connection string</param>
+        </member>
+        <member name="M:ORM.AccessDB.Insert``1(``0)">
+            <summary>
+            Inserts element to the database
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <param name="element">Element</param>
+        </member>
+        <member name="M:ORM.AccessDB.Update">
+            <summary>
+            Updates data
+            </summary>
+        </member>
+        <member name="M:ORM.AccessDB.Delete``1(``0)">
+            <summary>
+            Deletes specified element from database table
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <param name="element">Specififed element</param>
+        </member>
+        <member name="M:ORM.AccessDB.Get``1">
+            <summary>
+            Gets all elements in database table by type
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <returns>List of objects</returns>
+        </member>
+        <member name="T:ORM.ConectionSingleton">
+            <summary>
+            Representts a class for creating a connection
+            </summary>
+        </member>
+        <member name="F:ORM.ConectionSingleton.instance">
+            <summary>
+            Instance of the class
+            </summary>
+        </member>
+        <member name="F:ORM.ConectionSingleton.connection">
+            <summary>
+            Sql connection
+            </summary>
+        </member>
+        <member name="M:ORM.ConectionSingleton.#ctor">
+            <summary>
+            Creates an instance of the ConectionSingleton class
+            </summary>
+        </member>
+        <member name="P:ORM.ConectionSingleton.Connection">
+            <summary>
+            Gets sql connection
+            </summary>
+        </member>
+        <member name="M:ORM.ConectionSingleton.GetInstance(System.String)">
+            <summary>
+            Gets an instance of ConectionSingleton class
+            </summary>
+            <param name="connectionString"></param>
+            <returns>An instance of ConectionSingleton class</returns>
+        </member>
+        <member name="T:ORM.DataRepository">
+            <summary>
+            Representts a class for a working with database and store elements
+            </summary>
+        </member>
+        <member name="F:ORM.DataRepository.access">
+            <summary>
+            Access to the database
+            </summary>
+        </member>
+        <member name="M:ORM.DataRepository.#ctor(System.String)">
+            <summary>
+            Creates an instance of the DataRepository class
+            </summary>
+            <param name="stringConnection">Connection string</param>
+        </member>
+        <member name="P:ORM.DataRepository.Groups">
+            <summary>
+            All groups in database
+            </summary>
+        </member>
+        <member name="P:ORM.DataRepository.Students">
+            <summary>
+            All students in database
+            </summary>
+        </member>
+        <member name="P:ORM.DataRepository.Sessions">
+            <summary>
+            All sessions in database
+            </summary>
+        </member>
+        <member name="P:ORM.DataRepository.Exams">
+            <summary>
+            All exams in database
+            </summary>
+        </member>
+        <member name="P:ORM.DataRepository.Credits">
+            <summary>
+            All credits in database
+            </summary>
+        </member>
+        <member name="M:ORM.DataRepository.Insert``1(``0)">
+            <summary>
+            Inserts element to the database
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <param name="element">Element</param>
+        </member>
+        <member name="M:ORM.DataRepository.Update">
+            <summary>
+            Updates data
+            </summary>
+        </member>
+        <member name="M:ORM.DataRepository.Delete``1(``0)">
+            <summary>
+            Deletes specified element from database table
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <param name="element">Specififed element</param>
+        </member>
+        <member name="M:ORM.DataRepository.Get``1">
+            <summary>
+            Gets all elements in database table by type
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <returns>List of objects</returns>
+        </member>
+        <member name="M:ORM.DataRepository.GetAllElements">
+            <summary>
+            Gets all elements stored in database
+            </summary>
+        </member>
+        <member name="M:ORM.DataRepository.SetSession(SessionData.Group,System.Int32)">
+            <summary>
+            Adds session to all students of the group and inserts all added elements to the database
+            </summary>
+            <param name="group">Selected group</param>
+            <param name="sessionNumber">Session number</param>
+        </member>
+        <member name="M:ORM.DataRepository.SetLinks">
+            <summary>
+            Sets all links by specified owner id in properties
+            </summary>
+        </member>
+        <member name="M:ORM.DataRepository.FindById``1(System.Guid)">
+            <summary>
+            Find element in lists by id
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <param name="givenId">Given id</param>
+            <returns>Found element</returns>
+        </member>
+        <member name="T:ORM.IDAO">
+            <summary>
+            The interface for CRUD operations
+            </summary>
+        </member>
+        <member name="M:ORM.IDAO.Insert``1(``0)">
+            <summary>
+            Inserts element to the database
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <param name="element">Element</param>
+        </member>
+        <member name="M:ORM.IDAO.Update">
+            <summary>
+            Updates data
+            </summary>
+        </member>
+        <member name="M:ORM.IDAO.Delete``1(``0)">
+            <summary>
+            Deletes specified element from database table
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <param name="element">Specififed element</param>
+        </member>
+        <member name="M:ORM.IDAO.Get``1">
+            <summary>
+            Gets all elements in database table by type
+            </summary>
+            <typeparam name="T">Type in database table</typeparam>
+            <returns>List of objects</returns>
+        </member>
+    </members>
+</doc>

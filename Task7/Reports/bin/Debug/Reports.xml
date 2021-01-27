@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Reports</name>
+    </assembly>
+    <members>
+        <member name="T:Reports.AverageMarkSaver">
+            <summary>
+            Representts a class for adding sheets with average marks by specialty and examiner
+            </summary>
+        </member>
+        <member name="M:Reports.AverageMarkSaver.AddAverageBySpecialty(System.String,System.Collections.Generic.List{SessionData.Group},System.Int32)">
+            <summary>
+            Add a sheet with average marks by specialty
+            </summary>
+            <param name="path">Workbook path</param>
+            <param name="groups">Groups</param>
+            <param name="sessionNumber">Session number</param>
+        </member>
+        <member name="M:Reports.AverageMarkSaver.AddAverageByExaminer(System.String,System.Collections.Generic.List{SessionData.Group},System.Int32)">
+            <summary>
+            Add a sheet with average marks by specialty
+            </summary>
+            <param name="path">Workbook path</param>
+            <param name="groups">Student groups</param>
+            <param name="sessionNumber">Session number</param>
+        </member>
+        <member name="M:Reports.AverageMarkSaver.GetAverageBySpecialty(System.Collections.Generic.List{SessionData.Group},System.String,System.Int32)">
+            <summary>
+            Gets average mark by given specialty
+            </summary>
+            <param name="groups">Student groups</param>
+            <param name="specialty">Given specialty</param>
+            <param name="sessionNumber">Session number</param>
+            <returns>Average mark</returns>
+        </member>
+        <member name="M:Reports.AverageMarkSaver.GetAverageByExaminer(System.Collections.Generic.List{SessionData.Group},System.String,System.Int32)">
+            <summary>
+            Gets average mark by given examiner
+            </summary>
+            <param name="groups">Student groups</param>
+            <param name="examiner">Given examiner</param>
+            <param name="sessionNumber">Session number</param>
+            <returns>Average mark</returns>
+        </member>
+        <member name="T:Reports.SortingMode">
+            <summary>
+            Shows whether to sort exams or not
+            </summary>
+        </member>
+        <member name="F:Reports.SortingMode.Off">
+            <summary>
+            Sorting off
+            </summary>
+        </member>
+        <member name="F:Reports.SortingMode.On">
+            <summary>
+            Sorting on
+            </summary>
+        </member>
+        <member name="T:Reports.DynamicsReportMaker">
+            <summary>
+            Representts a class for making a table with the dinamics of changes in the average mark by years
+            </summary>
+        </member>
+        <member name="M:Reports.DynamicsReportMaker.MakeDynamicsReport(System.String,System.Collections.Generic.List{SessionData.Group},Reports.SortingMode)">
+            <summary>
+            Makes a table with the dinamics of changes in the average mark by years
+            </summary>
+            <param name="path">Save path</param>
+            <param name="groups">Student groups</param>
+            /// <param name="sortingMode">Sort mode</param>
+        </member>
+        <member name="M:Reports.DynamicsReportMaker.FillSheet(Microsoft.Office.Interop.Excel.Worksheet,System.Collections.Generic.List{SessionData.Group},Reports.SortingMode)">
+            <summary>
+            Fills given sheet with data
+            </summary>
+            <param name="workSheet">Given sheet</param>
+            <param name="groups">Student groups</param>
+            <param name="sortingMode">Sorting mode</param>
+        </member>
+        <member name="M:Reports.DynamicsReportMaker.GetYears(System.Collections.Generic.List{SessionData.Group})">
+            <summary>
+            Gets all years
+            </summary>
+            <param name="groups">Student groups</param>
+            <returns>Years list</returns>
+        </member>
+        <member name="M:Reports.DynamicsReportMaker.GetExams(System.Collections.Generic.List{SessionData.Group},Reports.SortingMode)">
+            <summary>
+            Gets all exam names
+            </summary>
+            <param name="groups">Student group</param>
+            <param name="sortingMode">Soring mode</param>
+            <returns>List of exam names</returns>
+        </member>
+        <member name="M:Reports.DynamicsReportMaker.GetAverage(System.Collections.Generic.List{SessionData.Group},System.String,System.Int32)">
+            <summary>
+            Gets average mark by selected exam and year
+            </summary>
+            <param name="groups">Student groups</param>
+            <param name="examName">Exam name</param>
+            <param name="year">Year</param>
+            <returns>Average mark</returns>
+        </member>
+        <member name="T:Reports.DataSaver">
+            <summary>
+            Representts a class for a saving data
+            </summary>
+        </member>
+        <member name="M:Reports.DataSaver.SaveAsXlsx(System.String,System.Collections.Generic.List{SessionData.Group},System.Int32,Sorters.SortTypes)">
+            <summary>
+            Saves data as a xlsx file
+            </summary>
+            <param name="path">File path</param>
+            <param name="groups">Groups</param>
+            <param name="sessionNumber">Number of saved data</param>
+            <param name="sortType">Sort type</param>
+        </member>
+        <member name="M:Reports.DataSaver.FillColumns(Microsoft.Office.Interop.Excel.Worksheet,SessionData.Session)">
+            <summary>
+            Fills table columns
+            </summary>
+            <param name="workSheet">Worksheet</param>
+            <param name="session">Session</param>
+        </member>
+        <member name="M:Reports.DataSaver.FillSheet(Microsoft.Office.Interop.Excel.Worksheet,System.Collections.Generic.List{SessionData.Student},System.Int32)">
+            <summary>
+            Fills sheet cells
+            </summary>
+            <param name="workSheet">Worksheet</param>
+            <param name="students">Students</param>
+            <param name="sessionNumber">Number of saved session</param>
+        </member>
+        <member name="T:Reports.PivotTableMaker">
+            <summary>
+            Representts a class for a making pivot table in the workbook
+            </summary>
+        </member>
+        <member name="M:Reports.PivotTableMaker.MakePivotTable(System.String)">
+            <summary>
+            Makes a pivot table in the workbook
+            </summary>
+            <param name="path">Workbook path</param>
+        </member>
+        <member name="M:Reports.PivotTableMaker.GetExamsNumber(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Gets exams number
+            </summary>
+            <param name="sheet">Current sheet</param>
+            <returns>Number of exams</returns>
+        </member>
+        <member name="M:Reports.PivotTableMaker.GetStudentsNumber(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Gets students number
+            </summary>
+            <param name="sheet">Current sheet</param>
+            <returns>Students number</returns>
+        </member>
+        <member name="M:Reports.PivotTableMaker.GetAddress(Microsoft.Office.Interop.Excel.Worksheet,System.Int32,System.Int32)">
+            <summary>
+            Gets address of cells
+            </summary>
+            <param name="sheet">Current sheet</param>
+            <param name="examsNumber">Exams number</param>
+            <param name="studentsNumber">Students number</param>
+            <returns>Address</returns>
+        </member>
+        <member name="T:Reports.SessionReport">
+            <summary>
+            Representts a class for making reports
+            </summary>
+        </member>
+        <member name="M:Reports.SessionReport.MakeReportByNumber(System.String,System.Collections.Generic.List{SessionData.Group},System.Int32,Sorters.SortTypes)">
+            <summary>
+            Makes report about selected session
+            </summary>
+            <param name="path">Save path</param>
+            <param name="groups">Student groups</param>
+            <param name="sessionNumber">Number of session</param>
+            <param name="sortType">Type of sort</param>
+        </member>
+        <member name="M:Reports.SessionReport.MakeReportByAll(System.String,System.Collections.Generic.List{SessionData.Group},Reports.SortingMode)">
+            <summary>
+            Makes a table with the dinamics of changes in the average mark by years
+            </summary>
+            <param name="path">Save path</param>
+            <param name="groups">Student groups</param>
+            <param name="sortingMode">Sorting mode</param>
+        </member>
+        <member name="T:Reports.StudentsListMaker">
+            <summary>
+            Representts a class for a making students expelled list
+            </summary>
+        </member>
+        <member name="M:Reports.StudentsListMaker.MakeExpelledList(System.Collections.Generic.List{SessionData.Group})">
+            <summary>
+            Makes students expelled list
+            </summary>
+            <param name="groups">Group</param>
+            <returns>Expelled list</returns>
+        </member>
+        <member name="M:Reports.StudentsListMaker.CheckSession(SessionData.Session)">
+            <summary>
+            Checks student session
+            </summary>
+            <param name="session">Session</param>
+            <returns>True if the specified session is passed; otherwise, false</returns>
+        </member>
+    </members>
+</doc>
