@@ -77,6 +77,28 @@ namespace UnitTests
         [DataRow("Ivanov Ivan")]
         [DataRow("Petrov Ivan")]
         [DataRow("Sergeev Ivan")]
+        public void UpdateElement(string name)
+        {
+            //Arange
+            SessionData.Group group = new SessionData.Group(Guid.NewGuid(), "IP-22", "Computer science and programming");
+            var initialStudent = new Student(Guid.NewGuid(), name, Sexes.Male, new DateTime(2020, 12, 12), group.Id);
+            //Act
+            MakeDB();
+            DataRepository repository = new DataRepository($"data source ={sqlServerPath}; Initial Catalog =dbTask7; Integrated Security = True");
+            repository.Insert(group);
+            repository.Insert(initialStudent);
+            initialStudent.FullName = "New Name";
+            repository.Update();
+            var resultStudent = repository.FindById<Student>(initialStudent.Id);
+            DeleteDB();
+            //Assert
+            Assert.AreEqual(initialStudent, resultStudent);
+        }
+
+        [DataTestMethod]
+        [DataRow("Ivanov Ivan")]
+        [DataRow("Petrov Ivan")]
+        [DataRow("Sergeev Ivan")]
         public void DeleteElement(string name)
         {
             //Arange
